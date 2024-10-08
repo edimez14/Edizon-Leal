@@ -11,8 +11,8 @@ def myskills(title: str) -> rx.Component:
     return rx.vstack(
         heading(title),
         bar_progress("Python 60%", 60),
-        bar_progress("C++ 30%", 30),
-        bar_progress("Rust 20%", 20),
+        bar_progress("Reactjs 30%", 30),
+        bar_progress("Django 30%", 30),
         bar_progress("Linux 40%", 40),
         width="100%",
     )

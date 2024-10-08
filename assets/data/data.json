@@ -12,23 +12,27 @@
         "github": "https://github.com/edimez14",
         "likedin": "https://www.linkedin.com/in/edizon-meza-leal-abb0361b9/"
     },
-    "about": "Computer Technology student, with one year of experience programming in python, c++, frontend, git and github. Interested in working as a Frontend Developer, Junior Backend Developer, Junior Data Analyst, Junior Test Engineer, Junior Research Assistant.",
+    "about": "Computer Science student with experience in web development with Reactjs, Django and other frameworks",
     "technologies": [
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "Reflex dev"
-        },
-        {
-            "icon": "devicon-python-plain",
-            "name": "Pygame"
-        },
         {
             "icon": "devicon-godot-plain",
             "name": "Godot"
         },
         {
-            "icon": "devicon-cplusplus-plain",
-            "name": "C++"
+            "icon": "devicon-devicon-plain",
+            "name": "Reflex dev"
+        },
+        {
+            "icon": "devicon-vitejs-plain",
+            "name": "Vitejs"
+        },
+        {
+            "icon": "devicon-react-original",
+            "name": "Reactjs"
+        },
+        {
+            "icon": "devicon-django-plain",
+            "name": "Django"
         },
         {
             "icon": "devicon-python-plain",
@@ -138,6 +142,38 @@
             "description": "provides an introduction to the Linux command line.",
             "date": "easy",
             "certificate": "/data/edizonleal-NDG Linux Unhatc-certificate.pdf"
+        },
+        {
+            "icon": "building-2",
+            "title": "SCRUM foundations certified expert",
+            "subtitle": "Take the course at Certjoin",
+            "description": "It provides the fundamentals of the SCRUM methodology.",
+            "date": "easy",
+            "certificate": "/data/Certificado de fundamentos de scrum edizon meza.pdf"
+        },
+        {
+            "icon": "handshake",
+            "title": "Business intelligence foundation certification",
+            "subtitle": "Take the course at certiprof",
+            "description": "Provides the fundamentals of business intelligence.",
+            "date": "easy",
+            "certificate": "/data/certificado-business-intelligence-foundation-edizon-meza.pdf"
+        },
+        {
+            "icon": "file-box",
+            "title": "Business model canvas essentials certification",
+            "subtitle": "Take the course at certiprof",
+            "description": "Provides the fundamentals of the model canvas.",
+            "date": "easy",
+            "certificate": "/data/certificado-business-model-canvas-edizon-meza.pdf"
+        },
+        {
+            "icon": "shield",
+            "title": "cybersecurity foundations certificate",
+            "subtitle": "Take the course at certiprof",
+            "description": "Provides the fundamentals of cybersecurity.",
+            "date": "easy",
+            "certificate": "/data/certificado de ciberseguridad edizon meza.pdf"
         }
     ],
     "services": [
