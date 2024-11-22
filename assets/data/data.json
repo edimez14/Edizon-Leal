@@ -69,23 +69,39 @@
     ],
     "projects": [
         {
-            "icon": "orbit",
-            "title": "Planet Simulation",
-            "subtitle": "planetary simulator made with pygame",
-            "description": "simulator of the planetary orbits of our solar system",
+            "icon": "key-round",
+            "title": "Password Generator",
+            "subtitle": "web application to generate random passwords with reacjs, nextjs, django, django rest framework",
+            "description": "Web application that generates passwords completely randomly, randomly selecting from a list that stores the generated passwords, created with reacjs, nextjs, django, django rest framework",
             "technologies": [
+                {
+                    "icon": "devicon-react-original",
+                    "name": "Reactjs"
+                },
+                {
+                    "icon": "devicon-nextjs-plain",
+                    "name": "Nextjs"
+                },
                 {
                     "icon": "devicon-python-plain",
                     "name": "Python"
                 },
                 {
                     "icon": "devicon-python-plain",
-                    "name": "Pygame"
+                    "name": "Random"
+                },
+                {
+                    "icon": "devicon-django-plain",
+                    "name": "Django"
+                },
+                {
+                    "icon": "devicon-djangorest-plain",
+                    "name": "Django Rest framework"
                 }
             ],
-            "image": "/work_1.jpg",
-            "url": "https://github.com/edimez14/planet_simulation",
-            "github": "https://github.com/edimez14/planet_simulation"
+            "image": "/work_3.png",
+            "url": "https://passwordgenerator-opal.vercel.app/",
+            "github": "https://github.com/edimez14/password_generator/"
         },
         {
             "icon": "flower-2",
@@ -111,10 +127,10 @@
             "github": "https://github.com/edimez14/ML-Florist-Decorator"
         },
         {
-            "icon": "key-round",
-            "title": "Password Generator",
-            "subtitle": "web application to generate random passwords with reflex",
-            "description": "Web application that generates passwords completely randomly, randomly selecting from a list that stores the generated passwords, created with the reflex dev framework.",
+            "icon": "orbit",
+            "title": "Planet Simulation",
+            "subtitle": "planetary simulator made with pygame",
+            "description": "simulator of the planetary orbits of our solar system",
             "technologies": [
                 {
                     "icon": "devicon-python-plain",
@@ -122,16 +138,12 @@
                 },
                 {
                     "icon": "devicon-python-plain",
-                    "name": "Reflex dev"
-                },
-                {
-                    "icon": "devicon-python-plain",
-                    "name": "Random"
+                    "name": "Pygame"
                 }
             ],
-            "image": "/work_3.jpg",
-            "url": "https://passwordgenerator.reflex.run/",
-            "github": "https://github.com/edimez14/password_generator/tree/web_version"
+            "image": "/work_1.jpg",
+            "url": "https://github.com/edimez14/planet_simulation",
+            "github": "https://github.com/edimez14/planet_simulation"
         }
     ],
     "training": [
