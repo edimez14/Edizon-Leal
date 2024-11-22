@@ -9,11 +9,11 @@ from portafolio.views.header import header
 from portafolio.views.info import info
 from portafolio.views.skills import myskills
 from portafolio.views.tech_stack import tech_stack
-from portafolio.pages.services import index_services
 
 DATA = data.data
 
-def index() -> rx.Component:
+@rx.page(route="/services", title="portfolio with services")
+def index_services() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
         # rx.hstack(navbar()),
@@ -25,7 +25,7 @@ def index() -> rx.Component:
             # myskills("My Skills"),
             info("Projects", DATA.projects),
             info("Training", DATA.training),
-            # service(DATA.services),
+            service(DATA.services),
             rx.divider(bg= "black"),
             footer(DATA.media),
             spacing=Size.XBIG.value,
@@ -55,7 +55,7 @@ description = DATA.description
 image = DATA.image
 
 app.add_page(
-    index,
+    index_services,
     title=title,
     description=description,
     image=image,
