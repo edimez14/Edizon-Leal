@@ -5,10 +5,10 @@ from portafolio.data import Service
 from portafolio.styles.styles import Size
 
 
-def service(services: list[Service]) -> rx.Component:
+def service(services: list[Service], is_es = False) -> rx.Component:
     return rx.vstack(
-        heading("Service"),
-        heading("What can i do?"),
+        heading("Service") if not is_es else heading("Servicios"),
+        heading("What can i do?") if not is_es else heading("¿Qué puedo hacer?"),
         rx.mobile_only(
             rx.vstack(
                 *[

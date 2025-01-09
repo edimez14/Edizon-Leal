@@ -10,7 +10,7 @@ from portafolio.views.info import info
 # from portafolio.views.skills import myskills
 from portafolio.views.tech_stack import tech_stack
 
-selected_language = "en"
+selected_language = "es"
 
 try:
     DATA = data.load_data(selected_language)
@@ -18,20 +18,20 @@ except ValueError as e:
     print(e)
     exit()
 
-@rx.page(route="/services", title="portfolio with services")
-def index_services() -> rx.Component:
+@rx.page(route="/es-services", title="portafolio con servicios")
+def index_es_services() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
         # rx.hstack(navbar()),
         rx.vstack(
             header(DATA),
-            about(DATA.about),
+            about(DATA.about, is_es=True),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
             # myskills("My Skills"),
-            info("Projects", DATA.projects),
-            info("Training", DATA.training),
-            service(DATA.services),
+            info("Proyectos", DATA.projects),
+            info("Capacitación", DATA.training),
+            service(DATA.services, is_es=True),
             rx.divider(bg= "black"),
             footer(DATA.media),
             spacing=Size.XBIG.value,
@@ -61,7 +61,7 @@ description = DATA.description
 image = DATA.image
 
 app.add_page(
-    index_services,
+    index_es_services,
     title=title,
     description=description,
     image=image,
