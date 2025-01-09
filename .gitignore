@@ -3,5 +3,6 @@
 .venv
 .web
 __pycache__/
+assets/external/
 proyect/
 public/
