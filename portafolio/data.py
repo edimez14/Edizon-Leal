@@ -13,6 +13,12 @@ class Technology:
     def __init__(self, icon, name):
         self.icon = icon
         self.name = name
+        
+    def to_dict(self):
+        return {
+            "icon": self.icon,
+            "name": self.name
+        }
 
 
 class Info:
@@ -70,8 +76,6 @@ class Data:
         self.services = [Service(**info) for info in services]
 
 
-
-
 def load_data(language):
     # Define los archivos JSON según el idioma
     files = {
@@ -87,17 +91,3 @@ def load_data(language):
     with open(files[language]) as file:
         json_data = json.load(file)
         return Data(**json_data)
-
-
-# Selecciona el idioma (puedes cambiar 'es' por 'en' según lo que necesites)
-# selected_language = "es"
-# try:
-#     data = load_data(selected_language)
-#     print(f"Datos cargados en {selected_language}: {data.title}")
-# except ValueError as e:
-#     print(e)
-
-# with open("assets/data/data.json") as file:
-#     json_data = json.load(file)
-
-# data = Data(**json_data)
