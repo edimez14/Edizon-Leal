@@ -7,11 +7,19 @@ from portafolio.views.footer import footer
 from portafolio.views.header import header
 # from portafolio.views.navbar import navbar
 from portafolio.views.info import info
-from portafolio.views.skills import myskills
+# from portafolio.views.skills import myskills
 from portafolio.views.tech_stack import tech_stack
 from portafolio.pages.services import index_services
+from portafolio.pages.es import index_es
+from portafolio.pages.es_services import index_es_services
 
-DATA = data.data
+selected_language = "en"
+
+try:
+    DATA = data.load_data(selected_language)
+except ValueError as e:
+    print(e)
+    exit()
 
 def index() -> rx.Component:
     return rx.center(

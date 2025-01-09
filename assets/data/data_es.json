@@ -1,18 +1,18 @@
 {
     "title": "Edizon Leal | Portafolio",
-    "description": "I am a computer technology student",
+    "description": "Soy un estudiante de tecnología en computación",
     "image": "/favicon.ico",
     "avatar": "/avatar.jpeg",
     "name": "Edizon Leal",
-    "skill": "Junior Backend Developer",
-    "location": "Colombia bogota",
+    "skill": "Programador Backend Junior",
+    "location": "Colombia Bogotá",
     "media": {
         "email": "edimez14@gmail.com",
         "cv": "/data/curriculum edizon meza.pdf",
         "github": "https://github.com/edimez14",
         "likedin": "https://www.linkedin.com/in/edizon-meza-leal-abb0361b9/"
     },
-    "about": "Student of Computer Science Technology with experience in web development with Reactjs, Django and other frameworks",
+    "about": "Estudiante de tecnologia en informatica con experiencia en desarrollo web utilizando ReactJS, Django y otros frameworks",
     "technologies": [
         {
             "icon": "devicon-godot-plain",
@@ -48,7 +48,7 @@
         },
         {
             "icon": "devicon-linux-plain",
-            "name": "linux"
+            "name": "Linux"
         }
     ],
     "experience": [
@@ -56,7 +56,7 @@
             "icon": "terminal",
             "title": "Metacortex",
             "subtitle": "Programador",
-            "description": "Programo software respetable desde un cubículo.",
+            "description": "Desarrollo software respetable desde un cubículo.",
             "date": "1999"
         },
         {
@@ -70,9 +70,9 @@
     "projects": [
         {
             "icon": "key-round",
-            "title": "Password Generator",
-            "subtitle": "web application to generate random passwords with reacjs, nextjs, django, django rest framework",
-            "description": "Web application that generates passwords completely randomly, randomly selecting from a list that stores the generated passwords, created with reacjs, nextjs, django, django rest framework",
+            "title": "Generador de Contraseñas",
+            "subtitle": "Aplicación web para generar contraseñas aleatorias con ReactJS, NextJS, Django, Django REST Framework",
+            "description": "Aplicación web que genera contraseñas completamente aleatorias, seleccionándolas al azar de una lista que almacena las contraseñas generadas, creada con ReactJS, NextJS, Django, Django REST Framework",
             "technologies": [
                 {
                     "icon": "devicon-react-original",
@@ -96,7 +96,7 @@
                 },
                 {
                     "icon": "devicon-djangorest-plain",
-                    "name": "Django Rest framework"
+                    "name": "Django Rest Framework"
                 }
             ],
             "image": "/work_3.png",
@@ -105,9 +105,9 @@
         },
         {
             "icon": "flower-2",
-            "title": "florist decorator website",
-            "subtitle": "website for a florist designer",
-            "description": "website for a florist designer, where you can know a little about her, and you can see the decorations that she makes; there is also several ways to communicate with her and how to follow her on her social networks. ",
+            "title": "Sitio web de decoración floral",
+            "subtitle": "Sitio web para una diseñadora floral",
+            "description": "Sitio web para una diseñadora floral, donde puedes conocer un poco sobre ella y ver las decoraciones que realiza; también hay varias formas de contactarla y seguirla en sus redes sociales.",
             "technologies": [
                 {
                     "icon": "devicon-html5-plain",
@@ -119,7 +119,7 @@
                 },
                 {
                     "icon": "devicon-javascript-plain",
-                    "name": "Javascript"
+                    "name": "JavaScript"
                 }
             ],
             "image": "/work_2.jpg",
@@ -128,9 +128,9 @@
         },
         {
             "icon": "orbit",
-            "title": "Planet Simulation",
-            "subtitle": "planetary simulator made with pygame",
-            "description": "simulator of the planetary orbits of our solar system",
+            "title": "Simulación Planetaria",
+            "subtitle": "Simulador planetario hecho con Pygame",
+            "description": "Simulador de las órbitas planetarias de nuestro sistema solar",
             "technologies": [
                 {
                     "icon": "devicon-python-plain",
@@ -149,65 +149,65 @@
     "training": [
         {
             "icon": "terminal",
-            "title": "NDG Linux Unhatched certificate",
-            "subtitle": "course in the Cisco Networking Academy",
-            "description": "provides an introduction to the Linux command line.",
-            "date": "easy",
+            "title": "Certificado NDG Linux Unhatched",
+            "subtitle": "Curso en la Academia de Redes de Cisco",
+            "description": "Proporciona una introducción a la línea de comandos de Linux.",
+            "date": "fácil",
             "certificate": "/data/edizonleal-NDG Linux Unhatc-certificate.pdf"
         },
         {
             "icon": "building-2",
-            "title": "SCRUM foundations certified expert",
-            "subtitle": "Take the course at Certjoin",
-            "description": "It provides the fundamentals of the SCRUM methodology.",
-            "date": "easy",
+            "title": "Certificado SCRUM Foundations",
+            "subtitle": "Tomé el curso en Certjoin",
+            "description": "Proporciona los fundamentos de la metodología SCRUM.",
+            "date": "fácil",
             "certificate": "/data/Certificado de fundamentos de scrum edizon meza.pdf"
         },
         {
             "icon": "building-2",
-            "title": "Business intelligence foundation certification",
-            "subtitle": "Take the course at certiprof",
-            "description": "Provides the fundamentals of business intelligence.",
-            "date": "easy",
+            "title": "Certificación en Fundamentos de Inteligencia de Negocios",
+            "subtitle": "Tomé el curso en Certiprof",
+            "description": "Proporciona los fundamentos de la inteligencia de negocios.",
+            "date": "fácil",
             "certificate": "/data/certificado-business-intelligence-foundation-edizon-meza.pdf"
         },
         {
             "icon": "file-box",
-            "title": "Business model canvas essentials certification",
-            "subtitle": "Take the course at certiprof",
-            "description": "Provides the fundamentals of the model canvas.",
-            "date": "easy",
+            "title": "Certificación en Fundamentos del Modelo Canvas",
+            "subtitle": "Tomé el curso en Certiprof",
+            "description": "Proporciona los fundamentos del modelo canvas.",
+            "date": "fácil",
             "certificate": "/data/certificado-business-model-canvas-edizon-meza.pdf"
         },
         {
             "icon": "shield",
-            "title": "cybersecurity foundations certificate",
-            "subtitle": "Take the course at certiprof",
-            "description": "Provides the fundamentals of cybersecurity.",
-            "date": "easy",
+            "title": "Certificado en Fundamentos de Ciberseguridad",
+            "subtitle": "Tomé el curso en Certiprof",
+            "description": "Proporciona los fundamentos de la ciberseguridad.",
+            "date": "fácil",
             "certificate": "/data/certificado de ciberseguridad edizon meza.pdf"
         }
     ],
     "services": [
         {
             "icon": "gamepad-2",
-            "title": "Game Development",
-            "description": "I can provide video game development services because I use tools like Godot Engine, Blender and Pygame."
+            "title": "Desarrollo de Videojuegos",
+            "description": "Puedo ofrecer servicios de desarrollo de videojuegos porque utilizo herramientas como Godot Engine, Blender y Pygame."
         },
         {
             "icon": "cpu",
-            "title": "Technical support",
-            "description": "Help users with Linux or Windows related technical issues, such as installing software or resolving network issues."
+            "title": "Soporte Técnico",
+            "description": "Ayudo a los usuarios con problemas técnicos relacionados con Linux o Windows, como instalar software o resolver problemas de red."
         },
         {
             "icon": "tangent",
-            "title": "UI/UX Design",
-            "description": "I use UI/UX design programs such as figma, miro and Godot Engine."
+            "title": "Diseño UI/UX",
+            "description": "Utilizo programas de diseño UI/UX como figma, miro y Godot Engine."
         },
         {
             "icon": "rss",
-            "title": "Web Development",
-            "description": "I have basic knowledge in web development that will make me capable of creating, assembling and managing web pages."
+            "title": "Desarrollo Web",
+            "description": "Tengo conocimientos básicos en desarrollo web que me permiten crear, montar y gestionar páginas web, como reactjs."
         }
     ]
 }

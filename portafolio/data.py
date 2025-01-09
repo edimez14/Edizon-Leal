@@ -70,7 +70,34 @@ class Data:
         self.services = [Service(**info) for info in services]
 
 
-with open("assets/data/data.json") as file:
-    json_data = json.load(file)
 
-data = Data(**json_data)
+
+def load_data(language):
+    # Define los archivos JSON según el idioma
+    files = {
+        "es": "assets/data/data_es.json",
+        "en": "assets/data/data.json"
+    }
+
+    # Verifica si el idioma seleccionado es válido
+    if language not in files:
+        raise ValueError(f"El idioma '{language}' no es válido. Usa 'es' o 'en'.")
+
+    # Carga los datos desde el archivo correspondiente
+    with open(files[language]) as file:
+        json_data = json.load(file)
+        return Data(**json_data)
+
+
+# Selecciona el idioma (puedes cambiar 'es' por 'en' según lo que necesites)
+# selected_language = "es"
+# try:
+#     data = load_data(selected_language)
+#     print(f"Datos cargados en {selected_language}: {data.title}")
+# except ValueError as e:
+#     print(e)
+
+# with open("assets/data/data.json") as file:
+#     json_data = json.load(file)
+
+# data = Data(**json_data)
