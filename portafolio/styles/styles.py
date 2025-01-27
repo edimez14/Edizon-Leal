@@ -37,5 +37,7 @@ STYLESHEETS = [
 BASE_STYLE = {
     rx.button: {
         "--cursor-button": "pointer"
-    }
+    },
+    # "background": "#000000",
+    "background": "#fff7f1",
 }

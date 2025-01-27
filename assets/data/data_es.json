@@ -71,8 +71,8 @@
         {
             "icon": "key-round",
             "title": "Generador de Contraseñas",
-            "subtitle": "Aplicación web para generar contraseñas aleatorias con ReactJS, NextJS, Django, Django REST Framework",
-            "description": "Aplicación web que genera contraseñas completamente aleatorias, seleccionándolas al azar de una lista que almacena las contraseñas generadas, creada con ReactJS, NextJS, Django, Django REST Framework",
+            "subtitle": "Aplicación web para generar contraseñas aleatorias.",
+            "description": "Aplicación web para generar contraseñas aleatorias. El backend utiliza un paquete desarrollado por mí que crea contraseñas y las devuelve al frontend cuando este envía una solicitud. Los usuarios pueden registrarse e iniciar sesión de forma segura gracias al uso de JWT para proteger las sesiones y sus datos. Además, los usuarios tienen la opción de guardar, editar o eliminar sus contraseñas generadas, así como editar o eliminar su cuenta.",
             "technologies": [
                 {
                     "icon": "devicon-react-original",
@@ -127,23 +127,19 @@
             "github": "https://github.com/edimez14/ML-Florist-Decorator"
         },
         {
-            "icon": "orbit",
-            "title": "Simulación Planetaria",
-            "subtitle": "Simulador planetario hecho con Pygame",
-            "description": "Simulador de las órbitas planetarias de nuestro sistema solar",
+            "icon": "gamepad-2",
+            "title": "Space Shooter (en desarrollo)",
+            "subtitle": "juego para moviles de batallas espaciales",
+            "description": "juego simple de una nave espacial destruyendo enemigos, un space shooter, lo hice para aprender como manejar godot engine, el juego esta hecho para dispositivos moviles.",
             "technologies": [
                 {
-                    "icon": "devicon-python-plain",
-                    "name": "Python"
-                },
-                {
-                    "icon": "devicon-python-plain",
-                    "name": "Pygame"
+                    "icon": "devicon-godot-plain",
+                    "name": "Godot Engine 3.5"
                 }
             ],
-            "image": "/work_1.jpg",
-            "url": "https://github.com/edimez14/planet_simulation",
-            "github": "https://github.com/edimez14/planet_simulation"
+            "image": "/work_1.png",
+            "url": "https://github.com/edimez14/space-shooter",
+            "github": "https://github.com/edimez14/space-shooter"
         }
     ],
     "training": [

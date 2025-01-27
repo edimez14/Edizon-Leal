@@ -18,7 +18,7 @@ except ValueError as e:
     print(e)
     exit()
 
-@rx.page(route="/es", title="portafolio")
+@rx.page(route="/es", title="Edizon Leal | Portafolio")
 def index_es() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
