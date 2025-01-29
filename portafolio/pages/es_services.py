@@ -7,7 +7,6 @@ from portafolio.views.footer import footer
 from portafolio.views.header import header
 # from portafolio.views.navbar import navbar
 from portafolio.views.info import info
-# from portafolio.views.skills import myskills
 from portafolio.views.tech_stack import tech_stack
 
 selected_language = "es"
@@ -28,7 +27,6 @@ def index_es_services() -> rx.Component:
             about(DATA.about, is_es=True),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            # myskills("My Skills"),
             info("Proyectos", DATA.projects),
             info("Capacitación", DATA.training),
             service(DATA.services, is_es=True),

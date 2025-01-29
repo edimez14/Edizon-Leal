@@ -2,12 +2,10 @@ import reflex as rx
 from portafolio import data
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size, glassmorphism
 from portafolio.views.about import about
-from portafolio.views.service import service
 from portafolio.views.footer import footer
 from portafolio.views.header import header
 # from portafolio.views.navbar import navbar
 from portafolio.views.info import info
-# from portafolio.views.skills import myskills
 from portafolio.views.tech_stack import tech_stack
 
 selected_language = "es"
@@ -28,10 +26,8 @@ def index_es() -> rx.Component:
             about(DATA.about, is_es=True),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            # myskills("My Skills"),
             info("Proyectos", DATA.projects),
             info("Capacitación", DATA.training),
-            # service(DATA.services, is_es=True),
             rx.divider(bg= "black"),
             footer(DATA.media),
             spacing=Size.XBIG.value,

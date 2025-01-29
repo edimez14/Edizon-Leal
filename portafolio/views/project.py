@@ -1,19 +1,18 @@
 import reflex as rx
-from portafolio.components.card_service import card_service
 from portafolio.components.heading import heading
-from portafolio.data import Service
+# from portafolio.data import Service
 from portafolio.styles.styles import Size
+from portafolio.components.card_detail import card_detail
 
 
-def service(services: list[Service], is_es = False) -> rx.Component:
+def project(is_es = False) -> rx.Component:
     return rx.vstack(
-        heading("Service") if not is_es else heading("Servicios"),
-        heading("What can i do?") if not is_es else heading("¿Qué puedo hacer?"),
+        heading("Projects") if not is_es else heading("Proyectos"),
         rx.mobile_only(
             rx.vstack(
                 *[
-                    card_service(service)
-                    for service in services
+                    card_detail()
+                    for service in range(10)
                 ],
                 spacing=Size.DEFAULT.value
             ),
@@ -22,11 +21,11 @@ def service(services: list[Service], is_es = False) -> rx.Component:
         rx.tablet_and_desktop(
             rx.grid(
                 *[
-                    card_service(service)
-                    for service in services
+                    card_detail()
+                    for service in range(10)
                 ],
                 spacing=Size.DEFAULT.value,
-                columns="4"
+                columns="2"
             ),
             width="100%"
         ),

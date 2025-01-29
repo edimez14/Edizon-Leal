@@ -1,18 +1,12 @@
 import reflex as rx
 from portafolio import data
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size, glassmorphism
-from portafolio.views.about import about
 from portafolio.views.footer import footer
 from portafolio.views.header import header
 # from portafolio.views.navbar import navbar
-from portafolio.views.info import info
-from portafolio.views.tech_stack import tech_stack
-from portafolio.pages.services import index_services
-from portafolio.pages.es import index_es
-from portafolio.pages.es_services import index_es_services
-from portafolio.pages.es_projects import es_projects
+from portafolio.views.project import project
 
-selected_language = "en"
+selected_language = "es"
 
 try:
     DATA = data.load_data(selected_language)
@@ -20,17 +14,15 @@ except ValueError as e:
     print(e)
     exit()
 
-def index() -> rx.Component:
+@rx.page(route="/es-projects", title="Edizon Leal | Proyectos")
+def es_projects() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
         # rx.hstack(navbar()),
         rx.vstack(
             header(DATA),
-            about(DATA.about),
             rx.divider(bg= "black"),
-            tech_stack(DATA.technologies),
-            info("Projects", DATA.projects),
-            info("Training", DATA.training),
+            project(is_es = True),
             rx.divider(bg= "black"),
             footer(DATA.media),
             spacing=Size.XBIG.value,
@@ -60,7 +52,7 @@ description = DATA.description
 image = DATA.image
 
 app.add_page(
-    index,
+    es_projects,
     title=title,
     description=description,
     image=image,
