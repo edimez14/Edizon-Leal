@@ -26,7 +26,7 @@ def index_es() -> rx.Component:
             about(DATA.about, is_es=True),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            info("Proyectos", DATA.projects),
+            info("Proyectos", DATA.projects, view_link=True),
             info("Capacitación", DATA.training),
             rx.divider(bg= "black"),
             footer(DATA.media),

@@ -27,7 +27,7 @@ def index_services() -> rx.Component:
             about(DATA.about),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            info("Projects", DATA.projects),
+            info("Projects", DATA.projects, view_link=True),
             info("Training", DATA.training),
             service(DATA.services),
             rx.divider(bg= "black"),

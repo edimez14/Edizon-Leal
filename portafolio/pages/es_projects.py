@@ -20,8 +20,8 @@ def es_projects() -> rx.Component:
         # rx.theme_panel(),
         # rx.hstack(navbar()),
         rx.vstack(
-            header(DATA),
-            rx.divider(bg= "black"),
+            # header(DATA),
+            # rx.divider(bg= "black"),
             project(is_es = True),
             rx.divider(bg= "black"),
             footer(DATA.media),

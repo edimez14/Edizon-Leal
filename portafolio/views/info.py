@@ -6,12 +6,12 @@ from portafolio.data import Info
 from portafolio.styles.styles import Size
 
 
-def info(title: str, info: list[Info]) -> rx.Component:
+def info(title: str, info: list[Info], view_link=False) -> rx.Component:
     return rx.vstack(
         heading(title),
         rx.vstack(
             *[
-                info_detail(item)
+                info_detail(item, view_link=view_link)
                 for item in info
             ],
             spacing=Size.DEFAULT.value,

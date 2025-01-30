@@ -29,7 +29,7 @@ def index() -> rx.Component:
             about(DATA.about),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            info("Projects", DATA.projects),
+            info("Projects", DATA.projects, view_link=True),
             info("Training", DATA.training),
             rx.divider(bg= "black"),
             footer(DATA.media),

@@ -2,10 +2,15 @@ import reflex as rx
 from portafolio.components.icon_badge import icon_badge
 from portafolio.components.icon_button import icon_button
 from portafolio.data import Info
+from portafolio.components.links import link
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, STYLESHEETS, Size
 
 
-def info_detail(info: Info) -> rx.Component:
+def info_detail(info: Info, view_link=False) -> rx.Component:
+    d: dict = {
+        "link": info.url,
+        "github": info.github,
+    }
     return rx.flex(
         rx.hstack(
             icon_badge(info.icon),
@@ -32,22 +37,7 @@ def info_detail(info: Info) -> rx.Component:
                         spacing=Size.SMALL.value
                     )
                 ),
-                rx.hstack(
-                    rx.cond(
-                        info.url != "",
-                        icon_button(
-                            "link",
-                            info.url
-                        )
-                    ),
-                    rx.cond(
-                        info.github != "",
-                        icon_button(
-                            "github",
-                            info.github
-                        )
-                    )
-                ),
+                rx.cond(info.url != "", rx.text("")) if not view_link else link(d),
                 spacing=Size.SMALL.value,
                 width="100%"
             ),

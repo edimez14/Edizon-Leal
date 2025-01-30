@@ -3,6 +3,7 @@ from portafolio.components.heading import heading
 # from portafolio.data import Service
 from portafolio.styles.styles import Size
 from portafolio.components.card_detail import card_detail
+from portafolio.components.modals import modal
 
 
 def project(is_es = False) -> rx.Component:
@@ -11,7 +12,7 @@ def project(is_es = False) -> rx.Component:
         rx.mobile_only(
             rx.vstack(
                 *[
-                    card_detail()
+                    modal(card_detail())
                     for service in range(10)
                 ],
                 spacing=Size.DEFAULT.value
@@ -21,7 +22,7 @@ def project(is_es = False) -> rx.Component:
         rx.tablet_and_desktop(
             rx.grid(
                 *[
-                    card_detail()
+                    modal(card_detail())
                     for service in range(10)
                 ],
                 spacing=Size.DEFAULT.value,
