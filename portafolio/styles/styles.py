@@ -39,5 +39,5 @@ BASE_STYLE = {
         "--cursor-button": "pointer"
     },
     # "background": "#000000",
-    "background": "#fff7f1",
+    # "background": "#fff7f1",
 }

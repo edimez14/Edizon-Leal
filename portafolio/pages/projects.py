@@ -1,6 +1,7 @@
 import reflex as rx
 from portafolio import data
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size, glassmorphism
+
 from portafolio.views.footer import footer
 from portafolio.views.header import header
 from portafolio.views.navbar import navbar
@@ -14,15 +15,15 @@ except ValueError as e:
     print(e)
     exit()
 
-@rx.page(route="/es-projects", title="Edizon Leal | Proyectos")
-def es_projects() -> rx.Component:
+@rx.page(route="/projects", title="Edizon Leal | Proyectos")
+def projects() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
-        rx.hstack(navbar(is_es=True)),
+        rx.hstack(navbar()),
         rx.vstack(
             # header(DATA),
             # rx.divider(bg= "black"),
-            project(is_es = True),
+            project(),
             rx.divider(bg= "black"),
             footer(DATA.media),
             spacing=Size.XBIG.value,
@@ -53,7 +54,7 @@ description = DATA.description
 image = DATA.image
 
 app.add_page(
-    es_projects,
+    projects,
     title=title,
     description=description,
     image=image,

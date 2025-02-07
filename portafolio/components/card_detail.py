@@ -3,7 +3,6 @@ import reflex as rx
 
 from portafolio.styles.styles import IMAGE_HEIGHT, MAX_WIDTH, STYLESHEETS, EmSize, Size
 
-
 def card_detail() -> rx.Component:
     return rx.link(
         rx.card(

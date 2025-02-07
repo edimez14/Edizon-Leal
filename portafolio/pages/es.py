@@ -1,12 +1,15 @@
 import reflex as rx
 from portafolio import data
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size, glassmorphism
+
 from portafolio.views.about import about
 from portafolio.views.footer import footer
 from portafolio.views.header import header
-# from portafolio.views.navbar import navbar
+from portafolio.views.navbar import navbar
 from portafolio.views.info import info
 from portafolio.views.tech_stack import tech_stack
+
+from portafolio.components.button_see_more import see_more
 
 selected_language = "es"
 
@@ -20,13 +23,16 @@ except ValueError as e:
 def index_es() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
-        # rx.hstack(navbar()),
+        rx.hstack(navbar(is_es=True)),
         rx.vstack(
             header(DATA),
             about(DATA.about, is_es=True),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            info("Proyectos", DATA.projects, view_link=True),
+            rx.vstack(
+                info("Proyectos", DATA.projects, view_link=True),
+                see_more(is_es=True),
+            ),
             info("Capacitación", DATA.training),
             rx.divider(bg= "black"),
             footer(DATA.media),

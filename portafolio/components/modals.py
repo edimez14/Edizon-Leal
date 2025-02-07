@@ -1,5 +1,5 @@
 import reflex as rx
-from portafolio.styles.styles import Size
+from portafolio.styles.styles import Size, glassmorphism
 from portafolio.components.links import link
 
 def modal(view: rx.Component) -> rx.Component:
@@ -80,4 +80,5 @@ def modal(view: rx.Component) -> rx.Component:
             ),
             # spacing=Size.DEFAULT.value
         ),
+        style=glassmorphism, 
     )

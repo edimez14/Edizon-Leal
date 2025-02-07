@@ -1,16 +1,21 @@
 import reflex as rx
 from portafolio import data
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size, glassmorphism
+
 from portafolio.views.about import about
 from portafolio.views.footer import footer
 from portafolio.views.header import header
-# from portafolio.views.navbar import navbar
+from portafolio.views.navbar import navbar
 from portafolio.views.info import info
 from portafolio.views.tech_stack import tech_stack
+
+from portafolio.components.button_see_more import see_more
+
 from portafolio.pages.services import index_services
 from portafolio.pages.es import index_es
 from portafolio.pages.es_services import index_es_services
 from portafolio.pages.es_projects import es_projects
+from portafolio.pages.projects import projects
 
 selected_language = "en"
 
@@ -21,15 +26,19 @@ except ValueError as e:
     exit()
 
 def index() -> rx.Component:
+
     return rx.center(
         # rx.theme_panel(),
-        # rx.hstack(navbar()),
+        rx.hstack(navbar()),
         rx.vstack(
             header(DATA),
             about(DATA.about),
             rx.divider(bg= "black"),
             tech_stack(DATA.technologies),
-            info("Projects", DATA.projects, view_link=True),
+            rx.vstack(
+                info("Projects", DATA.projects, view_link=True),
+                see_more(),
+            ),
             info("Training", DATA.training),
             rx.divider(bg= "black"),
             footer(DATA.media),
@@ -43,7 +52,6 @@ def index() -> rx.Component:
         padding_x=EmSize.MEDIUM.value,
         padding_y=EmSize.MEDIUM.value,
     )
-
 
 app = rx.App(
     stylesheets=STYLESHEETS,

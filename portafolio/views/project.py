@@ -1,12 +1,13 @@
 import reflex as rx
-from portafolio.components.heading import heading
 # from portafolio.data import Service
 from portafolio.styles.styles import Size
+
+from portafolio.components.heading import heading
 from portafolio.components.card_detail import card_detail
 from portafolio.components.modals import modal
 
 
-def project(is_es = False) -> rx.Component:
+def project(is_es: bool = False) -> rx.Component:
     return rx.vstack(
         heading("Projects") if not is_es else heading("Proyectos"),
         rx.mobile_only(
