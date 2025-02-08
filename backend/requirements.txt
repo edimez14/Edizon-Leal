@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pymongo 
+markdown2
+motor
+python-dotenv
+python-multipart

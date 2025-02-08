@@ -3,7 +3,7 @@ import reflex as rx
 
 from portafolio.styles.styles import IMAGE_HEIGHT, MAX_WIDTH, STYLESHEETS, EmSize, Size
 
-def card_detail() -> rx.Component:
+def card_detail(title: str, description: str, image_url: str) -> rx.Component:
     return rx.link(
         rx.card(
             rx.box(
@@ -12,7 +12,7 @@ def card_detail() -> rx.Component:
                         rx.flex(
                             rx.inset(
                                 rx.image(
-                                    src="/work_1.png",
+                                    src=image_url if image_url else "/work_1.png",
                                     height=IMAGE_HEIGHT,
                                     width="100%",
                                     object_fit="cover"
@@ -21,9 +21,9 @@ def card_detail() -> rx.Component:
                                 side="top",
                             ),
                             rx.box(
-                                rx.heading("Quick Start"),
+                                rx.heading(title),
                                 rx.text(
-                                    "Get started with Reflex in 5 minutes."
+                                    description
                                 ),
                                 padding="1em",
                             ),
@@ -39,16 +39,16 @@ def card_detail() -> rx.Component:
                         rx.flex(
                             rx.inset(
                                 rx.box(
-                                    background="center/cover url('/work_1.png')",
+                                    background=f"center/cover url('{image_url}')" if image_url else "center/cover url('/work_1.png')",
                                     height="100%",
                                 ),
                                 side="left",
                                 width="100%",
                             ),
                             rx.box(
-                                rx.heading("Quick Start"),
+                                rx.heading(title),
                                 rx.text(
-                                    "Get started with Reflex in 5 minutes."
+                                    description
                                 ),
                                 padding="1em",
                             ),

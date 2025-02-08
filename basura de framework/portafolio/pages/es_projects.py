@@ -1,6 +1,11 @@
 import reflex as rx
 from portafolio import data
+
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size, glassmorphism
+
+from portafolio.api.api import fetch_projects
+from portafolio.state.state_api import ProjectState
+
 from portafolio.views.footer import footer
 from portafolio.views.header import header
 from portafolio.views.navbar import navbar
@@ -38,6 +43,7 @@ def es_projects() -> rx.Component:
 
 
 app = rx.App(
+    state=ProjectState,
     stylesheets=STYLESHEETS,
     style=BASE_STYLE,
     theme=rx.theme(
