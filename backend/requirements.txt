@@ -5,3 +5,4 @@ markdown2
 motor
 python-dotenv
 python-multipart
+pydantic

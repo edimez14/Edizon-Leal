@@ -9,13 +9,13 @@ router = APIRouter()
 # path protegidas
 @router.post("/add-project", response_model=ProjectPost)
 async def create_project(project: ProjectPostCreate):
-    project_data = project.dict()
-    project_data["created_at"] = project_data["updated_at"] = project_data["created_at"] or datetime.now()
+    project_data = project.model_dump()
+    project_data["created_at"] = project_data["updated_at"] = datetime.now()
     
     new_project = await db.posts.insert_one(project_data)
     created_project = await db.posts.find_one({"_id": new_project.inserted_id})
     created_project["id"] = str(created_project["_id"])
-    return created_project  
+    return ProjectPost(**created_project)  
 
 @router.put("/update/{project_id}", response_model=ProjectPost)
 async def update_project(project_id: str, project: ProjectPostCreate):
@@ -54,10 +54,9 @@ async def read_project(project_id: str):
     project = await db.posts.find_one({"_id": ObjectId(project_id)})
     if project is None:
         raise HTTPException(status_code=404, detail="Project not found")
-
-    project["id"] = str(project["_id"])
     
-    return project
+    project["id"] = str(project["_id"])  # Convertir a string
+    return ProjectPost(**project)
 
 @router.get("/views/{project_id}/html")
 async def get_project_html(project_id: str):
@@ -76,7 +75,7 @@ async def get_all_project(limit: int = 10):
     projects = await db.posts.find().to_list(limit)
     
     for project in projects:
-        project["id"] = str(project["_id"])
+        project["id"] = str(project["_id"])  # Convertir a string
         del project["_id"]
 
-    return projects
+    return [ProjectPost(**project) for project in projects]

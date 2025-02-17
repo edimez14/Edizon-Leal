@@ -1,0 +1,8 @@
+/* glassmorphism.css */
+.glassmorphism {
+    background-color: var(--glassmorphism-bg);
+    box-shadow: var(--glassmorphism-shadow);
+    backdrop-filter: var(--glassmorphism-filter);
+    border: var(--glassmorphism-border);
+    border-radius: var(--glassmorphism-radius);
+  }

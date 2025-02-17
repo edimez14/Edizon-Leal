@@ -1,37 +1,45 @@
-from datetime import datetime
-from pydantic import BaseModel, HttpUrl
-from bson import ObjectId
-from typing import Optional, List, Union
-from fastapi import UploadFile, File
-from pydantic import GetJsonSchemaHandler
+from pydantic import BaseModel, GetJsonSchemaHandler, HttpUrl
 from pydantic.json_schema import JsonSchemaValue
 from pydantic_core import core_schema
+from bson import ObjectId
+from datetime import datetime
+from typing import Optional, List, Union, Annotated
 
-class PyObjectId(ObjectId):
+class PyObjectId(str):
     @classmethod
-    def __get_validators__(cls):
-        yield cls.validate
-        
+    def __get_pydantic_core_schema__(cls, _source_type, _handler):
+        return core_schema.chain_schema([
+            core_schema.str_schema(),
+            core_schema.no_info_after_validator_function(
+                cls.validate,
+                core_schema.str_schema()
+            )
+        ])
+
     @classmethod
     def validate(cls, v):
-        if not ObjectId.is_valid(v):
-            raise ValueError("Invalid Objectid")
-        return ObjectId(v)
-    
+        if isinstance(v, ObjectId):
+            return str(v)
+        if ObjectId.is_valid(v):
+            return str(ObjectId(v))
+        raise ValueError("Invalid ObjectId")
+
     @classmethod
     def __get_pydantic_json_schema__(
         cls, core_schema: core_schema.CoreSchema, handler: GetJsonSchemaHandler
     ) -> JsonSchemaValue:
         return handler(core_schema) | {"type": "string"}
-        
+
+ObjectIdAnnotation = Annotated[str, PyObjectId]
+
 class ImageData(BaseModel):
     caption: Optional[str]
     url: Union[HttpUrl, str]
     
 class ProjectPostBase(BaseModel):
     title: str
-    description: str
-    technology: dict
+    subtitle: str 
+    technology: list
     content: str
     url: dict
     featured_image: Optional[ImageData] = None
@@ -43,17 +51,17 @@ class ProjectPostCreate(ProjectPostBase):
     pass
 
 class ProjectPost(ProjectPostBase):
-    id: PyObjectId
+    id: ObjectIdAnnotation
     
     class Config:
         json_encoders = {ObjectId: str}
         json_schema_extra = {
             "example": {
                 "title": "prueba de proyecto",
-                "description": "esta es la descripción del proyecto de prueba",
-                "technology": {"icono": "texto"},
+                "subtitle": "este es el subtitulo del proyecto",
+                "technology": [{"icono": "icono", "texto": "texto"}],
                 "content": "## Hola mundo\n![Imagen de ejemplo](/uploads/image.jpg)",
-                "url": {"icono": "url"},
+                "url": {"link": "url", "github": "url"},
                 "featured_image": {
                     "caption": "Imagen principal del proyecto",
                     "url": "https://example.com/image.jpg"
@@ -66,7 +74,3 @@ class ProjectPost(ProjectPostBase):
                 "updated_at": datetime.now()
             }
         }
-
-class ImageUpload(BaseModel):
-    file: UploadFile
-    caption: Optional[str] = None

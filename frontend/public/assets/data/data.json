@@ -1,0 +1,205 @@
+{
+    "title": "Edizon Leal | Portfolio",
+    "description": "I am a computer technology student",
+    "image": "/favicon.ico",
+    "avatar": "/assets/avatar.jpeg",
+    "name": "Edizon Leal",
+    "skill": "Junior Backend Developer",
+    "location": "Colombia bogota",
+    "media": {
+        "email": "edimez14@gmail.com",
+        "cv": "/assets/data/curriculum edizon meza (en).pdf",
+        "github": "https://github.com/edimez14",
+        "linkedin": "https://www.linkedin.com/in/edizon-meza-leal-abb0361b9/"
+    },
+    "about": "Student of Computer Science Technology with experience in web development with Reactjs, Django and other frameworks",
+    "technologies": [
+        {
+            "icon": "SiGodotengine",
+            "name": "Godot"
+        },
+        {
+            "icon": "SiVite",
+            "name": "Vitejs"
+        },
+        {
+            "icon": "FaReact",
+            "name": "Reactjs"
+        },
+        {
+            "icon": "SiDjango",
+            "name": "Django"
+        },
+        {
+            "icon": "FaPython",
+            "name": "Python"
+        },
+        {
+            "icon": "SiRust",
+            "name": "Rust"
+        },
+        {
+            "icon": "FaGitAlt",
+            "name": "Git"
+        },
+        {
+            "icon": "FaLinux",
+            "name": "linux"
+        }
+    ],
+    "experience": [
+        {
+            "icon": "FiTerminal",
+            "title": "Metacortex",
+            "subtitle": "Programador",
+            "description": "Programo software respetable desde un cubículo.",
+            "date": "1999"
+        },
+        {
+            "icon": "GiRabbit",
+            "title": "Nebuchadnezzar",
+            "subtitle": "El Elegido",
+            "description": "Me encargo de salvar el mundo.",
+            "date": "1999 - Actualidad"
+        }
+    ],
+    "projects": [
+        {
+            "icon": "FiKey",
+            "title": "Password Generator",
+            "subtitle": "web application to generate random passwords.",
+            "description": "Web application for generating random passwords. The backend uses a package developed by me that creates passwords and returns them to the frontend when it sends a request. Users can register and log in securely thanks to the use of JWT to protect sessions and their data. Additionally, users have the option to save, edit or delete their generated passwords, as well as edit or delete their account.",
+            "technologies": [
+                {
+                    "icon": "FaReact",
+                    "name": "Reactjs"
+                },
+                {
+                    "icon": "RiNextjsFill",
+                    "name": "Nextjs"
+                },
+                {
+                    "icon": "FaPython",
+                    "name": "Python"
+                },
+                {
+                    "icon": "FaPython",
+                    "name": "Random"
+                },
+                {
+                    "icon": "SiDjango",
+                    "name": "Django"
+                },
+                {
+                    "icon": "SiDjango",
+                    "name": "Django Rest framework"
+                }
+            ],
+            "image": "/assets/work_3.png",
+            "url": "https://passwordgenerator-opal.vercel.app/",
+            "github": "https://github.com/edimez14/password_generator/"
+        },
+        {
+            "icon": "LuFlower2",
+            "title": "florist decorator website",
+            "subtitle": "website for a florist designer",
+            "description": "website for a florist designer, where you can know a little about her, and you can see the decorations that she makes; there is also several ways to communicate with her and how to follow her on her social networks. ",
+            "technologies": [
+                {
+                    "icon": "FaHtml5",
+                    "name": "HTML"
+                },
+                {
+                    "icon": "FaCss3Alt",
+                    "name": "CSS"
+                },
+                {
+                    "icon": "SiJavascript",
+                    "name": "Javascript"
+                }
+            ],
+            "image": "/assets/work_2.jpg",
+            "url": "https://mlflorist.com/",
+            "github": "https://github.com/edimez14/ML-Florist-Decorator"
+        },
+        {
+            "icon": "GiGamepad",
+            "title": "Space Shooter (in development)",
+            "subtitle": "mobile game of space battles",
+            "description": "Simple game of a spaceship destroying enemies, a space shooter, I made it to learn how to handle godot engine, the game is made for mobile devices.",
+            "technologies": [
+                {
+                    "icon": "SiGodotengine",
+                    "name": "Godot Engine 3.5"
+                }
+            ],
+            "image": "/assets/work_1.png",
+            "url": "https://github.com/edimez14/space-shooter",
+            "github": "https://github.com/edimez14/space-shooter"
+        }
+    ],
+    "training": [
+        {
+            "icon": "FiTerminal",
+            "title": "NDG Linux Unhatched certificate",
+            "subtitle": "course in the Cisco Networking Academy",
+            "description": "provides an introduction to the Linux command line.",
+            "date": "easy",
+            "certificate": "/assets/data/edizonleal-NDG Linux Unhatc-certificate.pdf"
+        },
+        {
+            "icon": "FaRegBuilding",
+            "title": "SCRUM foundations certified expert",
+            "subtitle": "Take the course at Certjoin",
+            "description": "It provides the fundamentals of the SCRUM methodology.",
+            "date": "easy",
+            "certificate": "/assets/data/Certificado de fundamentos de scrum edizon meza.pdf"
+        },
+        {
+            "icon": "FaRegBuilding",
+            "title": "Business intelligence foundation certification",
+            "subtitle": "Take the course at certiprof",
+            "description": "Provides the fundamentals of business intelligence.",
+            "date": "easy",
+            "certificate": "/assets/data/certificado-business-intelligence-foundation-edizon-meza.pdf"
+        },
+        {
+            "icon": "FiPackage",
+            "title": "Business model canvas essentials certification",
+            "subtitle": "Take the course at certiprof",
+            "description": "Provides the fundamentals of the model canvas.",
+            "date": "easy",
+            "certificate": "/assets/data/certificado-business-model-canvas-edizon-meza.pdf"
+        },
+        {
+            "icon": "FiShield",
+            "title": "cybersecurity foundations certificate",
+            "subtitle": "Take the course at certiprof",
+            "description": "Provides the fundamentals of cybersecurity.",
+            "date": "easy",
+            "certificate": "/assets/data/certificado de ciberseguridad edizon meza.pdf"
+        }
+    ],
+    "services": [
+        {
+            "icon": "GiGamepad",
+            "title": "Game Development",
+            "description": "I can provide video game development services because I use tools like Godot Engine, Blender and Pygame."
+        },
+        {
+            "icon": "FiCpu",
+            "title": "Technical support",
+            "description": "Help users with Linux or Windows related technical issues, such as installing software or resolving network issues."
+        },
+        {
+            "icon": "FiLayout",
+            "title": "UI/UX Design",
+            "description": "I use UI/UX design programs such as figma, miro and Godot Engine."
+        },
+        {
+            "icon": "FiGlobe",
+            "title": "Web Development",
+            "description": "I have basic knowledge in web development that will make me capable of creating, assembling and managing web pages."
+        }
+    ]
+}
