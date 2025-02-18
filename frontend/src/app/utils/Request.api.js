@@ -1,10 +1,14 @@
 import axios from "axios";
 
-const DEBUG = process.env.NEXT_PUBLIC_DEBUG === "true";
+const DEBUG = process.env.DEBUG === "true";
 
 const api = axios.create({
-    baseURL: DEBUG ? "http://127.0.0.1:8000/api/" : process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api/",
+    baseURL: DEBUG ? "http://127.0.0.1:8000/api/" : process.env.API_URL || "http://127.0.0.1:8000/api/",
 });
+
+console.log(DEBUG);
+console.log(process.env.API_URL);
+console.log(process.env.DEBUG);
 
 export const BackendRequest = async (typeRequest, url, content = "") => {
     const headersList = {

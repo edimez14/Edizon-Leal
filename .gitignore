@@ -8,3 +8,4 @@ proyect/
 # public/
 .env
 .env.local
+.env.production
