@@ -4,7 +4,7 @@ import axios from "axios";
 const DEBUG = `${process.env.NEXT_PUBLIC_DEBUG}` === "true";
 
 const api = axios.create({
-    baseURL: DEBUG ? "http://127.0.0.1:8000/api/" : process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api/",
+    baseURL: DEBUG ? "http://127.0.0.1:8000/api/" : "/api",
 });
 
 export const BackendRequest = async (typeRequest, url, content = "") => {
