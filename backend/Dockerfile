@@ -18,6 +18,14 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
+COPY requirements.txt .
+
+RUN python -m venv .venv
+
+RUN /bin/bash -c "source .venv/bin/activate"
+
+# RUN pip install -r requirements.txt
+
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/go/dockerfile-user-best-practices/
 ARG UID=10001
@@ -29,6 +37,8 @@ RUN adduser \
     --no-create-home \
     --uid "${UID}" \
     appuser
+
+RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.
@@ -48,4 +58,4 @@ COPY . .
 EXPOSE 7979
 
 # Run the application.
-CMD uvicorn apps.api_projects:app --reload
+CMD ["uvicorn", "apps.api_projects:app", "--reload", "--host", "0.0.0.0", "--port", "7979"]

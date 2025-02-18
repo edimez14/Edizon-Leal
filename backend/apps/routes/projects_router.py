@@ -1,13 +1,23 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from apps.models.projects import *
 from apps.database.connection import db
 from bson import ObjectId
 import markdown2
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+PERMITIDO = os.getenv("PERMITIDO", "False").lower() == "true"
 
 router = APIRouter()
 
+def check_permission():
+    if not PERMITIDO:
+        raise HTTPException(status_code=403, detail="Access denied")
+    return True
+
 # path protegidas
-@router.post("/add-project", response_model=ProjectPost)
+@router.post("/add-project", response_model=ProjectPost, dependencies=[Depends(check_permission)])
 async def create_project(project: ProjectPostCreate):
     project_data = project.model_dump()
     project_data["created_at"] = project_data["updated_at"] = datetime.now()
@@ -17,7 +27,7 @@ async def create_project(project: ProjectPostCreate):
     created_project["id"] = str(created_project["_id"])
     return ProjectPost(**created_project)  
 
-@router.put("/update/{project_id}", response_model=ProjectPost)
+@router.put("/update/{project_id}", response_model=ProjectPost, dependencies=[Depends(check_permission)])
 async def update_project(project_id: str, project: ProjectPostCreate):
     project_data = project.dict(exclude_unset=True)
     project_data["updated_at"] = datetime.now()
@@ -39,7 +49,7 @@ async def update_project(project_id: str, project: ProjectPostCreate):
 
     raise HTTPException(status_code=404, detail="Project not found")
 
-@router.delete("/delete/{project_id}")
+@router.delete("/delete/{project_id}", dependencies=[Depends(check_permission)])
 async def delete_project(project_id: str):
     delete_result = await db.posts.delete_one({"_id": ObjectId(project_id)})
     

@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import os
 from dotenv import load_dotenv
 from apps.database.connection import init_db
 from apps.routes.projects_router import router as projects_router
@@ -9,9 +10,12 @@ app = FastAPI()
 
 load_dotenv()
 
+ORIGINS_DEPLOY = os.getenv("ORIGINS_DEPLOY")
+
 origins = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+    ORIGINS_DEPLOY    
 ]
 
 app.add_middleware(

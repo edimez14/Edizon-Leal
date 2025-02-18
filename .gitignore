@@ -7,3 +7,4 @@ assets/external/
 proyect/
 # public/
 .env
+.env.local

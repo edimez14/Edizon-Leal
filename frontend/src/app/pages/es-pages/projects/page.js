@@ -15,17 +15,22 @@ import Info from '@/app/views/Info';
 
 import Footer from '@/app/views/Footer';
 import NavBar from '@/app/views/NavBar';
+import { BackendRequest } from '@/app/utils/Request.api';
 import Project from '../../views/Project';
 
 export default function Home() {
     const [data, setData] = useState(null);
+    const [projects, setProjects] = useState(null);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const loadedData = await loadData('es'); // o 'en'
+                const loadedData = await loadData('en');
+                const loadedProjects = await BackendRequest("GET", "views");
                 setData(loadedData);
+                // console.log(loadedProjects.data);
+                setProjects(loadedProjects.data);
             } catch (err) {
                 setError(err);
             }
@@ -41,7 +46,7 @@ export default function Home() {
         <div className='h-full py-3 px-10 sm:px-36 sm:py-10'>
             <NavBar is_es={true} />
             <div className="glassmorphism p-5 gap-2">
-                <Project data={data.projects} is_es={true} />
+                <Project data={projects} is_es={true} />
                 <Divider className="my-4" />
                 <Footer data={data.media} />
             </div>
