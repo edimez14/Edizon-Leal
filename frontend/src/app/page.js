@@ -40,7 +40,7 @@ export default function Home() {
   if (!data) return <div className='flex justify-center items-center m-auto'>Loading...</div>;
 
   return (
-    <div className='h-full py-3 px-10 sm:px-36 sm:py-10'>
+    <div className='h-full py-3 px-6 sm:px-36 sm:py-10'>
       <NavBar />
       <div className="glassmorphism p-5 gap-2">
         <Header data={data} />
