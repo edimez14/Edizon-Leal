@@ -40,7 +40,7 @@ export default function CreateProjectModal({ lang, onProjectCreated }) {
     content: "",
     technology: [],
     url: {
-      website: "",
+      link: "",
       github: ""
     },
     featured_image: {
@@ -58,7 +58,7 @@ export default function CreateProjectModal({ lang, onProjectCreated }) {
     if (techName && techIcon && availableIcons.includes(techIcon)) {
       setFormData(prev => ({
         ...prev,
-        technology: [...prev.technology, { icono: techIcon, texto: techName }]
+        technology: [...prev.technology, { icon: techIcon, texto: techName }]
       }));
       setTechName("");
       setTechIcon("");
@@ -96,7 +96,7 @@ export default function CreateProjectModal({ lang, onProjectCreated }) {
       content: "",
       technology: [],
       url: {
-        website: "",
+        link: "",
         github: ""
       },
       featured_image: {
@@ -183,7 +183,7 @@ export default function CreateProjectModal({ lang, onProjectCreated }) {
                   <div className="flex flex-wrap gap-2">
                     {formData.technology.map((tech, index) => (
                       <Badge key={index} color="primary" className="gap-1">
-                        <DynamicIcon icon={tech.icono} size="sm" />
+                        <DynamicIcon icon={tech.icon} size="sm" />
                         {tech.texto}
                       </Badge>
                     ))}
@@ -215,10 +215,10 @@ export default function CreateProjectModal({ lang, onProjectCreated }) {
                   <Input
                     label={lang === "en" ? "Website URL" : "URL del Sitio"}
                     type="url"
-                    value={formData.url.website}
+                    value={formData.url.link}
                     onChange={(e) => setFormData(prev => ({
                       ...prev,
-                      url: { ...prev.url, website: e.target.value }
+                      url: { ...prev.url, link: e.target.value }
                     }))}
                     startContent={<DynamicIcon icon="FiGlobe" />}
                   />
