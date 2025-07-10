@@ -43,6 +43,7 @@ import { FaMoon } from "react-icons/fa";
 import { GrServices } from "react-icons/gr";
 import { GrProjects } from "react-icons/gr";
 import { FiPlus } from "react-icons/fi";
+import { FaFileDownload } from "react-icons/fa";
 
 // Mapeo de nombres de iconos a componentes
 const icons = {
@@ -82,7 +83,8 @@ const icons = {
   FaMoon,
   GrServices,
   GrProjects,
-  FiPlus
+  FiPlus,
+  FaFileDownload
 };
 
 export default function DynamicIcon({ icon, size = 'md', ...props }) {

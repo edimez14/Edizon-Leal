@@ -141,35 +141,27 @@
     "training": [
         {
             "icon": "FiTerminal",
-            "title": "NDG Linux Unhatched certificate",
-            "subtitle": "course in the Cisco Networking Academy",
-            "description": "provides an introduction to the Linux command line.",
+            "title": "Fundamentos de Linux",
+            "subtitle": "Cisco networking academy course",
+            "description": "It provides all the basic and fundamental things about Linux and also the command line.",
             "date": "easy",
-            "certificate": "/assets/data/edizonleal-NDG Linux Unhatc-certificate.pdf"
+            "certificate": "/assets/data/certificado de fundamentos de linux.pdf"
         },
         {
-            "icon": "FaRegBuilding",
-            "title": "SCRUM foundations certified expert",
-            "subtitle": "Take the course at Certjoin",
-            "description": "It provides the fundamentals of the SCRUM methodology.",
-            "date": "easy",
-            "certificate": "/assets/data/Certificado de fundamentos de scrum edizon meza.pdf"
+            "icon": "FaPython",
+            "title": "Python 2 Fundamentals Certificate",
+            "subtitle": "Cisco networking academy course",
+            "description": "provides all intermediate and advanced concepts on python programming language",
+            "date": "intermediate",
+            "certificate": "/assets/data/certificado de fundamentos de python 2.pdf"
         },
         {
-            "icon": "FaRegBuilding",
-            "title": "Business intelligence foundation certification",
-            "subtitle": "Take the course at certiprof",
-            "description": "Provides the fundamentals of business intelligence.",
-            "date": "easy",
-            "certificate": "/assets/data/certificado-business-intelligence-foundation-edizon-meza.pdf"
-        },
-        {
-            "icon": "FiPackage",
-            "title": "Business model canvas essentials certification",
-            "subtitle": "Take the course at certiprof",
-            "description": "Provides the fundamentals of the model canvas.",
-            "date": "easy",
-            "certificate": "/assets/data/certificado-business-model-canvas-edizon-meza.pdf"
+            "icon": "SiJavascript",
+            "title": "JavaScript Essentials 2 certificate",
+            "subtitle": "Cisco networking academy course",
+            "description": "provides all intermediate and advanced concepts on javascript programming language",
+            "date": "intermediate",
+            "certificate": "/assets/data/certificado de javascript essentials 2.pdf"
         },
         {
             "icon": "FiShield",

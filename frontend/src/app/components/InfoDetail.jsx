@@ -73,7 +73,7 @@ export default function InfoDetail({ info, view_link = false, is_p = true }) {
               {
                 info.certificate === "" ? <p></p> : (
                   <IconButton
-                    icon={"IoShieldCheckmark"}
+                    icon={"FaFileDownload"}
                     url={info.certificate}
                     solid={true}
                     size='lg'

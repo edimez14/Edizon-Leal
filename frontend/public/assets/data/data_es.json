@@ -142,34 +142,26 @@
         {
             "icon": "FiTerminal",
             "title": "Certificado NDG Linux Unhatched",
-            "subtitle": "Curso en la Academia de Redes de Cisco",
-            "description": "Proporciona una introducción a la línea de comandos de Linux.",
+            "subtitle": "Curso de la Academia de Redes de Cisco",
+            "description": "Proporciona todas las cosas basicas y fundamentales sobre linux y tambien la linea de comandos.",
             "date": "fácil",
-            "certificate": "/data/edizonleal-NDG Linux Unhatc-certificate.pdf"
+            "certificate": "/data/certificado de fundamentos de linux.pdf"
         },
         {
-            "icon": "FaRegBuilding",
-            "title": "Certificado SCRUM Foundations",
-            "subtitle": "Tomé el curso en Certjoin",
-            "description": "Proporciona los fundamentos de la metodología SCRUM.",
-            "date": "fácil",
-            "certificate": "/data/Certificado de fundamentos de scrum edizon meza.pdf"
+            "icon": "FaPython",
+            "title": "certificado de fundamentos de python 2",
+            "subtitle": "Curso de la Academia de Redes de Cisco",
+            "description": "Proporciona todos los conceptos intermedios y avanzados sobre el lenguaje de programación de Python",
+            "date": "intermedio",
+            "certificate": "/assets/data/certificado de fundamentos de python 2.pdf"
         },
         {
-            "icon": "FaRegBuilding",
-            "title": "Certificación en Fundamentos de Inteligencia de Negocios",
-            "subtitle": "Tomé el curso en Certiprof",
-            "description": "Proporciona los fundamentos de la inteligencia de negocios.",
-            "date": "fácil",
-            "certificate": "/assets/data/certificado-business-intelligence-foundation-edizon-meza.pdf"
-        },
-        {
-            "icon": "FiPackage",
-            "title": "Certificación en Fundamentos del Modelo Canvas",
-            "subtitle": "Tomé el curso en Certiprof",
-            "description": "Proporciona los fundamentos del modelo canvas.",
-            "date": "fácil",
-            "certificate": "/assets/data/certificado-business-model-canvas-edizon-meza.pdf"
+            "icon": "SiJavascript",
+            "title": "Certificado de JavaScript Essentials 2",
+            "subtitle": "Curso de la Academia de Redes de Cisco",
+            "description": "Proporciona todos los conceptos intermedios y avanzados sobre el lenguaje de programación de javascript",
+            "date": "iintermedio",
+            "certificate": "/assets/data/certificado de javascript essentials 2.pdf"
         },
         {
             "icon": "FiShield",

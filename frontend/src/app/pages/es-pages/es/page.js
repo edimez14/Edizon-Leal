@@ -51,7 +51,7 @@ export default function Home() {
           <Info title="Proyectos" info={data.projects} view_link={true} />
           <ButtonSeeMore is_es={true} />
         </VStack>
-        <Info title="Certificandos" info={data.training} is_p={false} />
+        <Info title="Certificados" info={data.training} is_p={false} />
         <Divider className="my-4" />
         <Footer data={data.media} />
       </div>
