@@ -15,7 +15,6 @@ import About from '@/app/views/About';
 import TechStack from '@/app/views/TechStack';
 import Info from '@/app/views/Info';
 
-import ButtonSeeMore from '@/app/components/ButtonSeeMore';
 import Footer from '@/app/views/Footer';
 import NavBar from '@/app/views/NavBar';
 
@@ -49,7 +48,6 @@ export default function Home() {
         <TechStack technologies={data.technologies} is_es={true} />
         <VStack>
           <Info title="Proyectos" info={data.projects} view_link={true} />
-          {// <ButtonSeeMore is_es={true} />}
         </VStack>
         <Info title="Certificados" info={data.training} is_p={false} />
         <Divider className="my-4" />
