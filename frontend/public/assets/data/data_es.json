@@ -100,29 +100,6 @@
             "github": "https://github.com/edimez14/password_generator/"
         },
         {
-            "icon": "LuFlower2",
-            "title": "Sitio web de decoración floral",
-            "subtitle": "Sitio web para una diseñadora floral",
-            "description": "Sitio web para una diseñadora floral, donde puedes conocer un poco sobre ella y ver las decoraciones que realiza; también hay varias formas de contactarla y seguirla en sus redes sociales.",
-            "technologies": [
-                {
-                    "icon": "FaHtml5",
-                    "name": "HTML"
-                },
-                {
-                    "icon": "FaCss3Alt",
-                    "name": "CSS"
-                },
-                {
-                    "icon": "SiJavascript",
-                    "name": "Javascript"
-                }
-            ],
-            "image": "/assets/work_2.jpg",
-            "url": "https://mlflorist.com/",
-            "github": "https://github.com/edimez14/ML-Florist-Decorator"
-        },
-        {
             "icon": "GiGamepad",
             "title": "Space Shooter (en desarrollo)",
             "subtitle": "juego para moviles de batallas espaciales",

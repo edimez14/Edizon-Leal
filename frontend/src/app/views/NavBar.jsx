@@ -23,13 +23,13 @@ export default function NavBar({ is_es = false }) {
     const p_en = [
         { icon: 'FaHome', url: "/", text: "Home" },
         { icon: 'GrServices', url: "/pages/en-pages/service", text: "Service" },
-        { icon: 'GrProjects', url: "/pages/en-pages/projects", text: "Projects" }
+    //    { icon: 'GrProjects', url: "/pages/en-pages/projects", text: "Projects" }
     ];
 
     const p_es = [
         { icon: 'FaHome', url: "/pages/es-pages/es", text: "Inicio" },
         { icon: 'GrServices', url: "/pages/es-pages/service", text: "Servicios" },
-        { icon: 'GrProjects', url: "/pages/es-pages/projects", text: "Proyectos" }
+    //    { icon: 'GrProjects', url: "/pages/es-pages/projects", text: "Proyectos" }
     ];
 
     return (

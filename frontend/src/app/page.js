@@ -49,7 +49,7 @@ export default function Home() {
         <TechStack technologies={data.technologies} />
         <VStack>
           <Info title="Projects" info={data.projects} view_link={true} />
-          <ButtonSeeMore />
+          // <ButtonSeeMore />
         </VStack>
         <Info title="Training" info={data.training} is_p={false} />
         <Divider className="my-4" />

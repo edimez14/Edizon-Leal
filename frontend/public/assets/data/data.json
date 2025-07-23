@@ -100,29 +100,6 @@
             "github": "https://github.com/edimez14/password_generator/"
         },
         {
-            "icon": "LuFlower2",
-            "title": "florist decorator website",
-            "subtitle": "website for a florist designer",
-            "description": "website for a florist designer, where you can know a little about her, and you can see the decorations that she makes; there is also several ways to communicate with her and how to follow her on her social networks. ",
-            "technologies": [
-                {
-                    "icon": "FaHtml5",
-                    "name": "HTML"
-                },
-                {
-                    "icon": "FaCss3Alt",
-                    "name": "CSS"
-                },
-                {
-                    "icon": "SiJavascript",
-                    "name": "Javascript"
-                }
-            ],
-            "image": "/assets/work_2.jpg",
-            "url": "https://mlflorist.com/",
-            "github": "https://github.com/edimez14/ML-Florist-Decorator"
-        },
-        {
             "icon": "GiGamepad",
             "title": "Space Shooter (in development)",
             "subtitle": "mobile game of space battles",
