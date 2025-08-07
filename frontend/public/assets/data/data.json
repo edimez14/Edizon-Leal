@@ -65,6 +65,29 @@
     ],
     "projects": [
         {
+            "icon": "GrProjects",
+            "title": "Energias Renovables Polo a Tierra S.A.S",
+            "subtitle": "Information page of the company Energias Renovables Polo a Tierra S.A.S",
+            "description": "Website for Energias Renovables Polo a Tierra S.A.S., a company dedicated to the installation and maintenance of solar panels. Design your website so you can have an online presence. The entire website contains information about the company and how to contact them.",
+            "technologies": [
+                {
+                    "icon": "FaHtml5",
+                    "name": "HTML"
+                },
+                {
+                    "icon": "FaCss3Alt",
+                    "name": "CSS"
+                },
+                {
+                    "icon": "SiJavascript",
+                    "name": "Javascript"
+                }
+            ],
+            "image": "/assets/proyecto-pagina-alirio.png",
+            "url": "https://energiaspoloatierra.com/",
+            "github": "https://github.com/edimez14/pagina_cliente_alirio"
+        },
+        {
             "icon": "FiKey",
             "title": "Password Generator",
             "subtitle": "web application to generate random passwords.",
