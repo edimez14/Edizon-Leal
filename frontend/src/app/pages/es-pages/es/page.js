@@ -1,22 +1,22 @@
-'use client';
-import { useState, useEffect } from 'react';
+"use client";
+import { useState, useEffect } from "react";
 
-import { VStack } from '@chakra-ui/react';
+import { VStack } from "@chakra-ui/react";
 import { Divider } from "@heroui/divider";
 
-import '@/app/styles/variables.css';
-import '@/app/styles/glassmorphism.css';
-import '@/app/styles/base.css';
+import "@/app/styles/variables.css";
+import "@/app/styles/glassmorphism.css";
+import "@/app/styles/base.css";
 
-import { loadData } from '@/app/utils/data';
+import { loadData } from "@/app/utils/data";
 
-import Header from '@/app/views/Header';
-import About from '@/app/views/About';
-import TechStack from '@/app/views/TechStack';
-import Info from '@/app/views/Info';
+import Header from "@/app/views/Header";
+import About from "@/app/views/About";
+import TechStack from "@/app/views/TechStack";
+import Info from "@/app/views/Info";
 
-import Footer from '@/app/views/Footer';
-import NavBar from '@/app/views/NavBar';
+import Footer from "@/app/views/Footer";
+import NavBar from "@/app/views/NavBar";
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -25,7 +25,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const loadedData = await loadData('es'); // o 'en'
+        const loadedData = await loadData("es"); // o 'en'
         setData(loadedData);
       } catch (err) {
         setError(err);
@@ -35,11 +35,19 @@ export default function Home() {
     fetchData();
   }, []);
 
-  if (error) return <div className='flex justify-center items-center m-auto'>Error: {error.message}</div>;
-  if (!data) return <div className='flex justify-center items-center m-auto'>Cargando...</div>;
+  if (error)
+    return (
+      <div className="flex justify-center items-center m-auto">
+        Error: {error.message}
+      </div>
+    );
+  if (!data)
+    return (
+      <div className="flex justify-center items-center m-auto">Cargando...</div>
+    );
 
   return (
-    <div className='h-full py-3 px-6 sm:px-36 sm:py-10'>
+    <div className="h-full py-3 px-6 sm:px-36 sm:py-10">
       <NavBar is_es={true} />
       <div className="glassmorphism p-5 gap-2">
         <Header data={data} />

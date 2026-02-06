@@ -1,3 +1,4 @@
+# activar backend: uvicorn apps.api_projects:app --reload
 from fastapi import FastAPI
 import os
 from dotenv import load_dotenv
@@ -15,7 +16,7 @@ ORIGINS_DEPLOY = os.getenv("ORIGINS_DEPLOY")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    ORIGINS_DEPLOY    
+    ORIGINS_DEPLOY
 ]
 
 app.add_middleware(
@@ -29,6 +30,6 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup_db_client():
     await init_db()
-    
+
 app.include_router(projects_router, prefix="/api", tags=["posts"])
 app.include_router(image_router, prefix="/api/images", tags=["images"])

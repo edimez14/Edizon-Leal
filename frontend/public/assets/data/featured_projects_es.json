@@ -1,0 +1,75 @@
+[
+  {
+    "icon": "GrProjects",
+    "title": "Energías Renovables Polo a Tierra S.A.S",
+    "subtitle": "Corporate landing page for a renewable energy company",
+    "overview": "Landing page corporativa desarrollada para una empresa del sector de energías renovables con el objetivo de establecer presencia digital profesional y facilitar el contacto con clientes potenciales.",
+    "problem": "La empresa no contaba con presencia en internet, lo que limitaba su alcance comercial y la posibilidad de recibir contactos fuera de su círculo local.",
+    "solution": "Diseñé y desarrollé una landing page clara y funcional que presenta los servicios de la empresa, refuerza su imagen profesional y permite el contacto directo desde cualquier lugar de Colombia.",
+    "my_role": "Responsable del diseño y desarrollo completo del sitio: estructura, estilos, contenido y funcionalidad.",
+    "key_features": [
+      "Diseño responsive adaptable a dispositivos móviles y escritorio",
+      "Secciones claras orientadas a servicios y contacto",
+      "Carga rápida y estructura simple"
+    ],
+    "business_value": "El sitio permite a la empresa mostrar sus servicios de forma profesional, mejorar su visibilidad y recibir contactos de potenciales clientes de manera directa.",
+    "learnings": "Aprendí a trabajar con requerimientos reales de un cliente, priorizar claridad sobre complejidad técnica y entregar un producto funcional alineado a objetivos de negocio.",
+    "technologies": [
+      { "icon": "FaHtml5", "name": "HTML" },
+      { "icon": "FaCss3Alt", "name": "CSS" },
+      { "icon": "SiJavascript", "name": "JavaScript" }
+    ],
+    "image": "/assets/proyecto-pagina-alirio.png",
+    "url": "https://energiaspoloatierra.com/",
+    "github": "https://github.com/edimez14/pagina_cliente_alirio"
+  },
+  {
+    "icon": "FiKey",
+    "title": "Password Generator",
+    "subtitle": "Aplicación web fullstack para la gestión segura de contraseñas",
+    "overview": "Aplicación web fullstack para la generación y gestión segura de contraseñas, desarrollada desde cero y desplegada en producción.",
+    "problem": "Muchos usuarios reutilizan contraseñas débiles y no cuentan con una forma sencilla de generarlas y administrarlas de manera segura.",
+    "solution": "Construí una aplicación que permite generar contraseñas aleatorias, almacenarlas de forma segura y gestionarlas mediante una cuenta de usuario autenticada.",
+    "my_role": "Desarrollador fullstack. Implementé la lógica de negocio, el backend, la API, la autenticación y el frontend.",
+    "key_features": [
+      "Generación de contraseñas aleatorias",
+      "Registro e inicio de sesión de usuarios",
+      "Autenticación basada en JWT",
+      "Gestión de contraseñas (crear, editar y eliminar)",
+      "Gestión de cuenta de usuario"
+    ],
+    "business_value": "El proyecto demuestra capacidad para construir aplicaciones completas, manejar autenticación, proteger datos y mantener un flujo frontend-backend funcional.",
+    "learnings": "Aprendí a estructurar una API, manejar autenticación, separar responsabilidades entre frontend y backend y desplegar una aplicación lista para uso real.",
+    "technologies": [
+      { "icon": "FaReact", "name": "React" },
+      { "icon": "RiNextjsFill", "name": "Next.js" },
+      { "icon": "FaPython", "name": "Python" },
+      { "icon": "FaPython", "name": "Random" },
+      { "icon": "SiDjango", "name": "Django" },
+      { "icon": "SiDjango", "name": "Django REST Framework" }
+    ],
+    "image": "/assets/work_3.png",
+    "url": "https://passwordgenerator-opal.vercel.app/",
+    "github": "https://github.com/edimez14/password_generator/"
+  },
+  {
+    "icon": "GiGamepad",
+    "title": "Space Shooter (In development)",
+    "subtitle": "Arcade-style space shooter game for mobile and web",
+    "overview": "Juego tipo space shooter desarrollado como proyecto de aprendizaje para comprender las bases del desarrollo de videojuegos con Godot Engine.",
+    "problem": "Necesidad de aprender lógica de juego, control del jugador y flujo básico de desarrollo en un motor de videojuegos.",
+    "solution": "Desarrollé un juego arcade simple que implementa mecánicas básicas y es compatible con dispositivos móviles y web.",
+    "my_role": "Desarrollador del juego. Implementé lógica, controles y estructura general del proyecto.",
+    "key_features": [
+      "Control del jugador",
+      "Mecánicas básicas de disparo y movimiento",
+      "Compatibilidad con móviles y web"
+    ],
+    "business_value": "El proyecto demuestra capacidad de aprendizaje autónomo, lógica de programación aplicada y adaptación a nuevas herramientas.",
+    "learnings": "Aprendí fundamentos de lógica de juego, organización de escenas y flujo de trabajo en Godot Engine.",
+    "technologies": [{ "icon": "SiGodotengine", "name": "Godot Engine 3.5" }],
+    "image": "/assets/work_1.png",
+    "url": "https://github.com/edimez14/space-shooter",
+    "github": "https://github.com/edimez14/space-shooter"
+  }
+]

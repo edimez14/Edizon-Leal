@@ -1,197 +1,193 @@
 {
-    "title": "Edizon Leal | Portfolio",
-    "description": "I am a computer technology student",
-    "image": "/favicon.ico",
-    "avatar": "/assets/avatar.jpeg",
-    "name": "Edizon Leal",
-    "skill": "Junior Backend Developer",
-    "location": "Colombia bogota",
-    "media": {
-        "email": "edimez14@gmail.com",
-        "cv": "/assets/data/curriculum edizon meza (en).pdf",
-        "github": "https://github.com/edimez14",
-        "linkedin": "https://www.linkedin.com/in/edizon-meza-leal-abb0361b9/"
+  "title": "Edizon Leal | Portfolio",
+  "description": "I am a computer technology student",
+  "image": "/favicon.ico",
+  "avatar": "/assets/avatar.jpeg",
+  "name": "Edizon Leal",
+  "skill": "Junior Backend Developer",
+  "location": "Colombia bogota",
+  "media": {
+    "email": "edimez14@gmail.com",
+    "cv": "/assets/data/curriculum edizon meza (en).pdf",
+    "github": "https://github.com/edimez14",
+    "linkedin": "https://www.linkedin.com/in/edizon-meza-leal-abb0361b9/"
+  },
+  "about": "Student of Computer Science Technology with experience in web development with Reactjs, Django and other frameworks",
+  "technologies": [
+    {
+      "icon": "SiGodotengine",
+      "name": "Godot"
     },
-    "about": "Student of Computer Science Technology with experience in web development with Reactjs, Django and other frameworks",
-    "technologies": [
+    {
+      "icon": "FaReact",
+      "name": "Reactjs"
+    },
+    {
+      "icon": "SiDjango",
+      "name": "Django"
+    },
+    {
+      "icon": "FaPython",
+      "name": "Python"
+    },
+    {
+      "icon": "SiRust",
+      "name": "Rust"
+    },
+    {
+      "icon": "FaGitAlt",
+      "name": "Git"
+    },
+    {
+      "icon": "FaLinux",
+      "name": "linux"
+    }
+  ],
+  "experience": [
+    {
+      "icon": "FiTerminal",
+      "title": "Metacortex",
+      "subtitle": "Programador",
+      "description": "Programo software respetable desde un cubículo.",
+      "date": "1999"
+    },
+    {
+      "icon": "GiRabbit",
+      "title": "Nebuchadnezzar",
+      "subtitle": "El Elegido",
+      "description": "Me encargo de salvar el mundo.",
+      "date": "1999 - Actualidad"
+    }
+  ],
+  "projects": [
+    {
+      "icon": "GrProjects",
+      "title": "Energias Renovables Polo a Tierra S.A.S",
+      "subtitle": "Information page of the company Energias Renovables Polo a Tierra S.A.S",
+      "description": "Design and development of a corporate landing page for a renewable energy company, focused on improving its online presence and making it easier for potential clients across Colombia to get in touch. I implemented the site structure, layout, and functionality, delivering a clear, fast, and business-oriented product.",
+      "technologies": [
         {
-            "icon": "SiGodotengine",
-            "name": "Godot"
+          "icon": "FaHtml5",
+          "name": "HTML"
         },
         {
-            "icon": "SiVite",
-            "name": "Vitejs"
+          "icon": "FaCss3Alt",
+          "name": "CSS"
         },
         {
-            "icon": "FaReact",
-            "name": "Reactjs"
-        },
-        {
-            "icon": "SiDjango",
-            "name": "Django"
-        },
-        {
-            "icon": "FaPython",
-            "name": "Python"
-        },
-        {
-            "icon": "SiRust",
-            "name": "Rust"
-        },
-        {
-            "icon": "FaGitAlt",
-            "name": "Git"
-        },
-        {
-            "icon": "FaLinux",
-            "name": "linux"
+          "icon": "SiJavascript",
+          "name": "Javascript"
         }
-    ],
-    "experience": [
+      ],
+      "image": "/assets/proyecto-pagina-alirio.png",
+      "url": "https://energiaspoloatierra.com/",
+      "github": "https://github.com/edimez14/pagina_cliente_alirio"
+    },
+    {
+      "icon": "FiKey",
+      "title": "Password Generator",
+      "subtitle": "web app to generate random passwords.",
+      "description": "Fullstack web application for password generation and management. I developed the backend using Python and Django, implementing the password generation logic and an API to communicate with the frontend. I also implemented JWT-based authentication, allowing users to register, log in, and manage their passwords (create, edit, and delete), as well as manage their user account. The project is deployed and fully functional in production.",
+      "technologies": [
         {
-            "icon": "FiTerminal",
-            "title": "Metacortex",
-            "subtitle": "Programador",
-            "description": "Programo software respetable desde un cubículo.",
-            "date": "1999"
+          "icon": "FaReact",
+          "name": "Reactjs"
         },
         {
-            "icon": "GiRabbit",
-            "title": "Nebuchadnezzar",
-            "subtitle": "El Elegido",
-            "description": "Me encargo de salvar el mundo.",
-            "date": "1999 - Actualidad"
+          "icon": "RiNextjsFill",
+          "name": "Nextjs"
+        },
+        {
+          "icon": "FaPython",
+          "name": "Python"
+        },
+        {
+          "icon": "FaPython",
+          "name": "Random"
+        },
+        {
+          "icon": "SiDjango",
+          "name": "Django"
+        },
+        {
+          "icon": "SiDjango",
+          "name": "Django Rest framework"
         }
-    ],
-    "projects": [
+      ],
+      "image": "/assets/work_3.png",
+      "url": "https://passwordgenerator-opal.vercel.app/",
+      "github": "https://github.com/edimez14/password_generator/"
+    },
+    {
+      "icon": "GiGamepad",
+      "title": "Space Shooter (in development)",
+      "subtitle": "mobile game of space battles",
+      "description": "Arcade-style space shooter game developed as a learning project to understand the workflow of Godot Engine. I implemented core gameplay mechanics, player controls, and support for mobile and web platforms. This project is focused on building solid foundations in game development and game logic.",
+      "technologies": [
         {
-            "icon": "GrProjects",
-            "title": "Energias Renovables Polo a Tierra S.A.S",
-            "subtitle": "Information page of the company Energias Renovables Polo a Tierra S.A.S",
-            "description": "Website for Energias Renovables Polo a Tierra S.A.S., a company dedicated to the installation and maintenance of solar panels. Design your website so you can have an online presence. The entire website contains information about the company and how to contact them.",
-            "technologies": [
-                {
-                    "icon": "FaHtml5",
-                    "name": "HTML"
-                },
-                {
-                    "icon": "FaCss3Alt",
-                    "name": "CSS"
-                },
-                {
-                    "icon": "SiJavascript",
-                    "name": "Javascript"
-                }
-            ],
-            "image": "/assets/proyecto-pagina-alirio.png",
-            "url": "https://energiaspoloatierra.com/",
-            "github": "https://github.com/edimez14/pagina_cliente_alirio"
-        },
-        {
-            "icon": "FiKey",
-            "title": "Password Generator",
-            "subtitle": "web application to generate random passwords.",
-            "description": "Web application for generating random passwords. The backend uses a package developed by me that creates passwords and returns them to the frontend when it sends a request. Users can register and log in securely thanks to the use of JWT to protect sessions and their data. Additionally, users have the option to save, edit or delete their generated passwords, as well as edit or delete their account.",
-            "technologies": [
-                {
-                    "icon": "FaReact",
-                    "name": "Reactjs"
-                },
-                {
-                    "icon": "RiNextjsFill",
-                    "name": "Nextjs"
-                },
-                {
-                    "icon": "FaPython",
-                    "name": "Python"
-                },
-                {
-                    "icon": "FaPython",
-                    "name": "Random"
-                },
-                {
-                    "icon": "SiDjango",
-                    "name": "Django"
-                },
-                {
-                    "icon": "SiDjango",
-                    "name": "Django Rest framework"
-                }
-            ],
-            "image": "/assets/work_3.png",
-            "url": "https://passwordgenerator-opal.vercel.app/",
-            "github": "https://github.com/edimez14/password_generator/"
-        },
-        {
-            "icon": "GiGamepad",
-            "title": "Space Shooter (in development)",
-            "subtitle": "mobile game of space battles",
-            "description": "Simple game of a spaceship destroying enemies, a space shooter, I made it to learn how to handle godot engine, the game is made for mobile devices.",
-            "technologies": [
-                {
-                    "icon": "SiGodotengine",
-                    "name": "Godot Engine 3.5"
-                }
-            ],
-            "image": "/assets/work_1.png",
-            "url": "https://github.com/edimez14/space-shooter",
-            "github": "https://github.com/edimez14/space-shooter"
+          "icon": "SiGodotengine",
+          "name": "Godot Engine 3.5"
         }
-    ],
-    "training": [
-        {
-            "icon": "FiTerminal",
-            "title": "Fundamentos de Linux",
-            "subtitle": "Cisco networking academy course",
-            "description": "It provides all the basic and fundamental things about Linux and also the command line.",
-            "date": "easy",
-            "certificate": "/assets/data/certificado de fundamentos de linux.pdf"
-        },
-        {
-            "icon": "FaPython",
-            "title": "Python 2 Fundamentals Certificate",
-            "subtitle": "Cisco networking academy course",
-            "description": "provides all intermediate and advanced concepts on python programming language",
-            "date": "intermediate",
-            "certificate": "/assets/data/certificado de fundamentos de python 2.pdf"
-        },
-        {
-            "icon": "SiJavascript",
-            "title": "JavaScript Essentials 2 certificate",
-            "subtitle": "Cisco networking academy course",
-            "description": "provides all intermediate and advanced concepts on javascript programming language",
-            "date": "intermediate",
-            "certificate": "/assets/data/certificado de javascript essentials 2.pdf"
-        },
-        {
-            "icon": "FiShield",
-            "title": "cybersecurity foundations certificate",
-            "subtitle": "Take the course at certiprof",
-            "description": "Provides the fundamentals of cybersecurity.",
-            "date": "easy",
-            "certificate": "/assets/data/certificado de ciberseguridad edizon meza.pdf"
-        }
-    ],
-    "services": [
-        {
-            "icon": "GiGamepad",
-            "title": "Game Development",
-            "description": "I can provide video game development services because I use tools like Godot Engine, Blender and Pygame."
-        },
-        {
-            "icon": "FiCpu",
-            "title": "Technical support",
-            "description": "Help users with Linux or Windows related technical issues, such as installing software or resolving network issues."
-        },
-        {
-            "icon": "FiLayout",
-            "title": "UI/UX Design",
-            "description": "I use UI/UX design programs such as figma, miro and Godot Engine."
-        },
-        {
-            "icon": "FiGlobe",
-            "title": "Web Development",
-            "description": "I have basic knowledge in web development that will make me capable of creating, assembling and managing web pages."
-        }
-    ]
+      ],
+      "image": "/assets/work_1.png",
+      "url": "https://github.com/edimez14/space-shooter",
+      "github": "https://github.com/edimez14/space-shooter"
+    }
+  ],
+  "training": [
+    {
+      "icon": "FiTerminal",
+      "title": "Fundamentos de Linux",
+      "subtitle": "Cisco networking academy course",
+      "description": "It provides all the basic and fundamental things about Linux and also the command line.",
+      "date": "easy",
+      "certificate": "/assets/data/certificado de fundamentos de linux.pdf"
+    },
+    {
+      "icon": "FaPython",
+      "title": "Python 2 Fundamentals Certificate",
+      "subtitle": "Cisco networking academy course",
+      "description": "provides all intermediate and advanced concepts on python programming language",
+      "date": "intermediate",
+      "certificate": "/assets/data/certificado de fundamentos de python 2.pdf"
+    },
+    {
+      "icon": "SiJavascript",
+      "title": "JavaScript Essentials 2 certificate",
+      "subtitle": "Cisco networking academy course",
+      "description": "provides all intermediate and advanced concepts on javascript programming language",
+      "date": "intermediate",
+      "certificate": "/assets/data/certificado de javascript essentials 2.pdf"
+    },
+    {
+      "icon": "FiShield",
+      "title": "cybersecurity foundations certificate",
+      "subtitle": "Take the course at certiprof",
+      "description": "Provides the fundamentals of cybersecurity.",
+      "date": "easy",
+      "certificate": "/assets/data/certificado de ciberseguridad edizon meza.pdf"
+    }
+  ],
+  "services": [
+    {
+      "icon": "GiGamepad",
+      "title": "Game Development",
+      "description": "I can provide video game development services because I use tools like Godot Engine, Blender and Pygame."
+    },
+    {
+      "icon": "FiCpu",
+      "title": "Technical support",
+      "description": "Help users with Linux or Windows related technical issues, such as installing software or resolving network issues."
+    },
+    {
+      "icon": "FiLayout",
+      "title": "UI/UX Design",
+      "description": "I use UI/UX design programs such as figma, miro and Godot Engine."
+    },
+    {
+      "icon": "FiGlobe",
+      "title": "Web Development",
+      "description": "I have basic knowledge in web development that will make me capable of creating, assembling and managing web pages."
+    }
+  ]
 }
