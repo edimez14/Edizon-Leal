@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-pymongo 
+pymongo
 markdown2
 motor
 python-dotenv
