@@ -20,6 +20,10 @@ app = FastAPI()
 def ping():
     return {"status": "ok"}
 
+@app.get("/")
+def root():
+    return {"status": "backend activo y funcional"}
+
 # ==============================
 # CONFIGURACIÓN CORS
 # ==============================
