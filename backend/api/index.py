@@ -62,8 +62,4 @@ async def startup_db_client():
 app.include_router(projects_router, prefix="/api", tags=["posts"])
 app.include_router(image_router, prefix="/api/images", tags=["images"])
 
-# ==============================
-# HANDLER SERVERLESS (CLAVE)
-# ==============================
-
-# handler = Mangum(app)
+app = app
