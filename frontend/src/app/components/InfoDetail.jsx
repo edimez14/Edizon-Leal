@@ -9,8 +9,8 @@ import DynamicIcon from "./DynamicIcon";
 
 export default function InfoDetail({ info, view_link = false, is_p = true }) {
   const d = [
-    { name: 'FaLink', url: info.url },
-    { name: 'FaGithub', url: info.github }
+    { name: "FaLink", url: info.url },
+    { name: "FaGithub", url: info.github },
   ];
 
   return (
@@ -22,69 +22,62 @@ export default function InfoDetail({ info, view_link = false, is_p = true }) {
             <Text className="text-xl" fontWeight="bold">
               {info.title}
             </Text>
-            {
-              !view_link ? <p></p> : <Links dict={d} />
-            }
+            {!view_link ? <p></p> : <Links dict={d} />}
           </HStack>
           <Text>{info.subtitle}</Text>
           <Text textStyle="sm" className="">
             {info.description}
           </Text>
-          {
-            !info.technologies ? <p></p> : (
-              <Flex wrap="wrap" gap="2" className="p-2" >
-                <For each={info.technologies}>
-                  {(technology, index) => (
-                    <Badge key={index} className="p-2 text-gray-400">
-                      <DynamicIcon icon={technology.icon} /> <Text>{technology.name}</Text>
-                    </Badge>
-                  )}
-                </For>
-              </Flex>
-            )
-          }
+          {!info.technologies ? (
+            <p></p>
+          ) : (
+            <Flex wrap="wrap" gap="2" className="p-2">
+              <For each={info.technologies}>
+                {(technology, index) => (
+                  <Badge key={index} className="p-2 text-gray-400">
+                    <DynamicIcon icon={technology.icon} />{" "}
+                    <Text>{technology.name}</Text>
+                  </Badge>
+                )}
+              </For>
+            </Flex>
+          )}
         </VStack>
       </HStack>
-      {
-        info.image === "" ? <p></p> : (
-          <Image
-            src={info.image}
-            alt=""
-            width={400}
-            height={200}
-            style={{
-              // objectFit: 'cover',
-              borderRadius: '10px',
-            }}
-          />
-        )
-      }
-      {
-        is_p ? <p></p> : (
-          <>
-            <VStack align="end">
-              {
-                info.date === "" ? <p></p> : (
-                  <Badge>
-                    {info.date}
-                  </Badge>
-                )
-              }
-              {
-                info.certificate === "" ? <p></p> : (
-                  <IconButton
-                    icon={"FaFileDownload"}
-                    url={info.certificate}
-                    solid={true}
-                    size='lg'
-                    onlyIcon={true}
-                  />
-                )
-              }
-            </VStack>
-          </>
-        )
-      }
+      {info.image === "" ? (
+        <p></p>
+      ) : (
+        <Image
+          src={info.image}
+          alt=""
+          width={400}
+          height={200}
+          style={{
+            // objectFit: 'cover',
+            borderRadius: "10px",
+          }}
+        />
+      )}
+      {is_p ? (
+        <p></p>
+      ) : (
+        <>
+          <VStack align="end">
+            {info.date === "" ? <p></p> : <Badge>{info.date}</Badge>}
+            {info.certificate === "" ? (
+              <p></p>
+            ) : (
+              <IconButton
+                icon={"FaFileDownload"}
+                url={info.certificate}
+                solid={true}
+                size="lg"
+                onlyIcon={true}
+              />
+            )}
+          </VStack>
+        </>
+      )}
     </Flex>
   );
 }
