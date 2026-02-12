@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from mangum import Mangum
+# from mangum import Mangum
 import os
 from dotenv import load_dotenv
 
@@ -66,4 +66,4 @@ app.include_router(image_router, prefix="/api/images", tags=["images"])
 # HANDLER SERVERLESS (CLAVE)
 # ==============================
 
-handler = Mangum(app)
+# handler = Mangum(app)
