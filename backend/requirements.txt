@@ -6,6 +6,4 @@ motor
 python-dotenv
 python-multipart
 pydantic
-mangum
-passlib
-bcrypt
+certifi

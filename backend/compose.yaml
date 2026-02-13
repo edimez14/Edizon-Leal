@@ -1,11 +1,9 @@
-version: '3'
+version: "3"
 services:
   fastapi:
     image: backend-portfolio
-    build: 
+    build:
       context: .
     container_name: portfolio
     ports:
       - 7979:7979
-    env_file: .env
-
