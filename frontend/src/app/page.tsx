@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import Hero from "./views/Hero";
 import TechnicalApproach from "./views/TechnicalApproach";
+import Stack from "./views/Stack";
 
 export default function Portfolio() {
   const [mounted, setMounted] = useState(false);
@@ -45,102 +46,7 @@ export default function Portfolio() {
 
         {/* Core Infrastructure & Game Systems */}
         <section className="grid lg:grid-cols-2 gap-16 mb-40">
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <Server className="text-emerald-500" />
-              CORE_INFRASTRUCTURE
-            </h2>
-            <div className="space-y-4">
-              {[
-                {
-                  title: "Go / Node.js",
-                  desc: "High-performance backend services",
-                  icon: Terminal,
-                },
-                {
-                  title: "PostgreSQL",
-                  desc: "Relational data modeling & optimization",
-                  icon: Database,
-                },
-                {
-                  title: "Docker & Kubernetes",
-                  desc: "Containerization and orchestration",
-                  icon: Box,
-                },
-                {
-                  title: "Redis / Kafka",
-                  desc: "Caching layers and event-driven architectures",
-                  icon: Activity,
-                },
-              ].map((tech, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="flex items-center gap-4 p-4 border border-white/5 bg-white/[0.01] hover:border-emerald-500/30 transition-colors"
-                >
-                  <div className="p-3 bg-white/5 text-emerald-500">
-                    <tech.icon className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-sm">
-                      {tech.title}
-                    </h4>
-                    <p className="text-xs text-gray-500">{tech.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <Crosshair className="text-emerald-500" />
-              GAME_SYSTEMS
-            </h2>
-            <div className="space-y-4">
-              {[
-                {
-                  title: "C# & Unity / Unreal",
-                  desc: "Engine-level optimization",
-                  icon: Cpu,
-                },
-                {
-                  title: "Custom Networking",
-                  desc: "UDP/TCP protocols, state synchronization",
-                  icon: Globe,
-                },
-                {
-                  title: "Physics Optimization",
-                  desc: "Spatial partitioning, collision detection",
-                  icon: Activity,
-                },
-                {
-                  title: "Matchmaking Logic",
-                  desc: "Elo/Glicko systems, lobby management",
-                  icon: Server,
-                },
-              ].map((tech, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="flex items-center gap-4 p-4 border border-white/5 bg-white/[0.01] hover:border-emerald-500/30 transition-colors"
-                >
-                  <div className="p-3 bg-white/5 text-emerald-500">
-                    <tech.icon className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-sm">
-                      {tech.title}
-                    </h4>
-                    <p className="text-xs text-gray-500">{tech.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+          <Stack />
         </section>
 
         {/* Experimental Prototypes */}
