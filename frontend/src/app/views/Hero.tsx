@@ -44,7 +44,7 @@ export default function Hero() {
         </motion.p>
         <motion.div variants={fadeIn} className="flex flex-wrap gap-4 mb-16">
           <button className="flex items-center gap-2 bg-emerald-500 text-black px-6 py-3 font-bold text-sm tracking-wide hover:bg-emerald-400 transition-colors">
-            REVIEW RESEARCH <ArrowRight className="w-4 h-4" />
+            REVIEW_RESEARCH <ArrowRight className="w-4 h-4" />
           </button>
           <a
             href="/assets/data/curriculum edizon meza (es).pdf"
@@ -52,7 +52,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 border border-white/20 px-6 py-3 font-bold text-sm tracking-wide text-white hover:bg-white/5 transition-colors"
           >
-            DOWNLOAD CV <Download className="w-4 h-4" />
+            DESCARGAR_CV <Download className="w-4 h-4" />
           </a>
         </motion.div>
 
@@ -62,19 +62,19 @@ export default function Hero() {
         >
           <div>
             <p className="text-xs text-gray-500 mb-1 font-mono uppercase tracking-wider">
-              Benchmarked Latency
+              Benchmarked_Latency
             </p>
             <p className="text-xl font-bold text-white">&lt; 30ms</p>
           </div>
           <div>
             <p className="text-xs text-gray-500 mb-1 font-mono uppercase tracking-wider">
-              Local Cluster Uptime
+              Local_Cluster_Uptime
             </p>
             <p className="text-xl font-bold text-white">99.99%</p>
           </div>
           <div>
             <p className="text-xs text-gray-500 mb-1 font-mono uppercase tracking-wider">
-              Simulated Throughput
+              Simulated_Throughput
             </p>
             <p className="text-xl font-bold text-emerald-500">100k+ REQ</p>
           </div>

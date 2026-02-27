@@ -19,6 +19,7 @@ import {
   Crosshair,
 } from "lucide-react";
 import Hero from "./views/Hero";
+import TechnicalApproach from "./views/TechnicalApproach";
 
 export default function Portfolio() {
   const [mounted, setMounted] = useState(false);
@@ -37,48 +38,9 @@ export default function Portfolio() {
           <Hero />
         </section>
 
-        {/* Philosophy */}
-        <section className="mb-40">
-          <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
-            SYSTEM PHILOSOPHY
-            <span className="h-px bg-white/10 flex-grow" />
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Fault Tolerance",
-                desc: "Designing systems that assume failure is inevitable. Implementing circuit breakers, retries, and graceful degradation.",
-                icon: Shield,
-              },
-              {
-                title: "Elastic Architecture",
-                desc: "Horizontal scaling strategies that handle spikes in concurrency without bottlenecks.",
-                icon: Layers,
-              },
-              {
-                title: "Low Latency",
-                desc: "Optimizing the path from request to response. Profiling code paths and optimizing serialization.",
-                icon: Zap,
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="p-8 border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] transition-colors group"
-              >
-                <item.icon className="w-8 h-8 text-emerald-500 mb-6 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-white mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {item.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+        {/* TechnicalApproach */}
+        <section className="mb-40" id="core">
+          <TechnicalApproach />
         </section>
 
         {/* Core Infrastructure & Game Systems */}
