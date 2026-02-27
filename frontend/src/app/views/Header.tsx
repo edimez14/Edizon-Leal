@@ -42,12 +42,6 @@ export default function Header() {
             >
               BENCHMARKS
             </a>
-            <a
-              href="#initialize"
-              className="hover:text-white transition-colors"
-            >
-              INITIALIZE
-            </a>
           </nav>
 
           {/* Fila 2: Métricas */}
