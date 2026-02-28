@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
     return () => clearTimeout(timer);
   }, []);
 
-  const phoneNumber = "573011959492";
+  const phoneNumber = "5730119594902";
   const message =
     "Hola Edizon, vi tu portafolio y me gustaría hablar contigo sobre una oportunidad.";
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
