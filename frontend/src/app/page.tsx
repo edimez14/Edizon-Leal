@@ -9,19 +9,17 @@ import Certificates from "./views/Certificates";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-transparent text-gray-300 font-sans selection:bg-emerald-500/30">
+    // Se añade overflow-x-hidden aquí
+    <div className="min-h-screen bg-transparent text-gray-300 font-sans selection:bg-emerald-500/30 overflow-x-hidden">
       <main className="pt-24 md:pt-32 pb-16 md:pb-20 max-w-7xl mx-auto px-4 sm:px-6">
-        {/* Hero Section */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-24 md:mb-32 lg:mb-40">
           <Hero />
         </section>
 
-        {/* TechnicalApproach */}
         <section id="core" className="mb-24 md:mb-32 lg:mb-40">
           <TechnicalApproach />
         </section>
 
-        {/* Core Infrastructure & Game Systems */}
         <section
           id="stack"
           className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-24 md:mb-32 lg:mb-40"
@@ -29,12 +27,10 @@ export default function Portfolio() {
           <Stack />
         </section>
 
-        {/* Experimental Prototypes */}
         <section
           id="prototypes"
           className="relative mb-24 md:mb-32 lg:mb-40 py-16"
         >
-          {/* Capa de aislamiento visual: Gradiente suave sin blur */}
           <div
             className="absolute inset-0 -mx-4 sm:-mx-8 lg:-mx-16 pointer-events-none z-0"
             style={{
@@ -48,7 +44,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Certificates */}
         <section id="certificates" className="mb-24 md:mb-32 lg:mb-40">
           <Certificates />
         </section>

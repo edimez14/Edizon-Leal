@@ -8,7 +8,7 @@ export default function Background() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext("2d", { alpha: false }); // Optimización: alpha false
+    const ctx = canvas.getContext("2d", { alpha: false }); // Optimización: alpha false mejora el rendimiento
     if (!ctx) return;
 
     let animationFrameId: number;
@@ -18,7 +18,7 @@ export default function Background() {
     // Colores de la paleta (Esmeralda, Cian, Púrpura)
     const neonColors = ["#10b981", "#06b6d4", "#a855f7"];
 
-    // Ajuste de tamaño y resolución
+    // Ajuste de tamaño y resolución corregido para evitar scroll horizontal
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -200,7 +200,7 @@ export default function Background() {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            // MODIFICACIÓN: Líneas un poco más visibles (0.2 en lugar de 0.1)
+            // Las líneas un poco más visibles (0.2)
             ctx.strokeStyle = `rgba(255, 255, 255, ${0.2 - dist / 750})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
@@ -236,7 +236,8 @@ export default function Background() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 z-[-1] pointer-events-none"
+      // Se agrega 'block' y 'w-full h-full' para asegurar contención correcta en el layout
+      className="fixed top-0 left-0 w-full h-full block z-[-1] pointer-events-none"
     />
   );
 }
