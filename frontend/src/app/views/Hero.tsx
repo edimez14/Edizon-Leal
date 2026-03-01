@@ -32,10 +32,10 @@ export default function Hero() {
           variants={fadeIn}
           className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
-          Simulando <br className="hidden sm:block" />
-          sistemas que <br className="hidden sm:block" />
+          Desarrollador <br className="hidden sm:block" />
+          Backend Junior <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">
-            escalan al futuro.
+            en Python y Django
           </span>
         </motion.h1>
 

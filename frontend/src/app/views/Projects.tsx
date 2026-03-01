@@ -53,9 +53,11 @@ export default function Projects() {
               Generador de Contraseñas
             </h3>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-              Una herramienta web segura para generar contraseñas aleatorias y
-              robustas basadas en criptografía. Permite configurar longitud y
-              tipos de caracteres para cumplir con estándares de seguridad.
+              Aplicación web fullstack (Python/Django) para la gestión segura de
+              contraseñas. Resuelve la necesidad de generar y administrar
+              contraseñas de forma centralizada y controlada. Incluye API
+              backend, autenticación JWT, y gestión completa de datos (CRUD)
+              para usuarios, con frontend funcional y despliegue en producción.
             </p>
             <div className="flex flex-wrap gap-2">
               {["React", "Django", "Tailwind CSS", "Next.js"].map((tag) => (
