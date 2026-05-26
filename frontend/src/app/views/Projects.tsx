@@ -103,8 +103,8 @@ export default function Projects() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid lg:grid-cols-2 gap-6 md:gap-8 items-center group"
         >
-          {/* Contenedor de Imagen/Visual (Aparece abajo en móvil, izquierda en desktop) */}
-          <div className="order-2 lg:order-1 bg-[#050505] border border-cyan-500/20 aspect-video flex items-center justify-center relative overflow-hidden rounded-lg">
+          {/* Contenedor de Imagen/Visual (Aparece abajo en móvil, derecha en desktop) */}
+          <div className="order-2 lg:order-2 bg-[#050505] border border-cyan-500/20 aspect-video flex items-center justify-center relative overflow-hidden rounded-lg">
             {/* IMAGEN DEL PROYECTO */}
             <img
               src="/assets/work_4.png"
@@ -124,7 +124,7 @@ export default function Projects() {
           </div>
 
           {/* Contenedor de Texto */}
-          <div className="order-1 lg:order-2 space-y-4 md:space-y-6">
+          <div className="order-1 lg:order-1 space-y-4 md:space-y-6">
             <span className="inline-block text-[10px] md:text-xs font-mono bg-cyan-500/10 text-cyan-500 px-3 py-1 border border-cyan-500/20 rounded-sm">
               PLATAFORMA_ERP
             </span>
@@ -176,7 +176,7 @@ export default function Projects() {
           className="grid lg:grid-cols-2 gap-6 md:gap-8 items-center group"
         >
           {/* Contenedor de Texto */}
-          <div className="order-1 lg:order-1 space-y-4 md:space-y-6">
+          <div className="order-1 lg:order-2 space-y-4 md:space-y-6">
             <span className="inline-block text-[10px] md:text-xs font-mono bg-purple-500/10 text-purple-400 px-3 py-1 border border-purple-500/20 rounded-sm">
               APRENDIZAJE_PYTHON
             </span>
@@ -219,8 +219,8 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Contenedor de Imagen/Visual (Aparece abajo en móvil, derecha en desktop) */}
-          <div className="order-2 lg:order-2 bg-[#050505] border border-purple-500/20 aspect-video flex items-center justify-center relative overflow-hidden rounded-lg">
+          {/* Contenedor de Imagen/Visual (Aparece abajo en móvil, izquierda en desktop) */}
+          <div className="order-2 lg:order-1 bg-[#050505] border border-purple-500/20 aspect-video flex items-center justify-center relative overflow-hidden rounded-lg">
             {/* IMAGEN DEL PROYECTO */}
             <img
               src="/assets/work_5.png"
