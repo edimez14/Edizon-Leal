@@ -4,6 +4,7 @@ import React from "react";
 import Hero from "./views/Hero";
 import TechnicalApproach from "./views/TechnicalApproach";
 import Stack from "./views/Stack";
+import Experience from "./views/Experience";
 import Projects from "./views/Projects";
 import Certificates from "./views/Certificates";
 
@@ -25,6 +26,10 @@ export default function Portfolio() {
           className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-24 md:mb-32 lg:mb-40"
         >
           <Stack />
+        </section>
+
+        <section id="experience" className="mb-24 md:mb-32 lg:mb-40">
+          <Experience />
         </section>
 
         <section

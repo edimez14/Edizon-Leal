@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import TerminalSlider from "../components/TerminalSlider";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -19,6 +20,8 @@ const stagger = {
 };
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <>
       <motion.div
@@ -32,10 +35,10 @@ export default function Hero() {
           variants={fadeIn}
           className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
-          Desarrollador <br className="hidden sm:block" />
-          Backend Junior <br className="hidden sm:block" />
+          {t.hero.title1} <br className="hidden sm:block" />
+          {t.hero.title2} <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">
-            en Python y Django
+            {t.hero.title3}
           </span>
         </motion.h1>
 
@@ -43,8 +46,7 @@ export default function Hero() {
           variants={fadeIn}
           className="text-base sm:text-lg md:text-xl text-gray-400 mb-10 max-w-lg border-l-2 border-emerald-500 pl-4 leading-relaxed"
         >
-          Junior Backend Engineer enfocado en experimentación de alto
-          rendimiento y arquitectura distribuida.
+          {t.hero.subtitle}
         </motion.p>
 
         {/* Botones: Se apilan en móvil (w-full) y se alinean horizontalmente en pantallas más grandes */}
@@ -57,15 +59,15 @@ export default function Hero() {
             className="flex items-center justify-center gap-2 bg-emerald-500 text-black px-6 py-3 font-bold text-sm tracking-wide hover:bg-emerald-400 transition-colors w-full sm:w-auto"
             rel="noopener noreferrer"
           >
-            PROYECTOS <ArrowRight className="w-4 h-4" />
+            {t.hero.projectsBtn} <ArrowRight className="w-4 h-4" />
           </a>
           <a
-            href="/assets/data/curriculum edizon meza (es).pdf"
+            href={t.hero.cvPdf}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 border border-white/20 px-6 py-3 font-bold text-sm tracking-wide text-white hover:bg-white/5 transition-colors w-full sm:w-auto"
           >
-            DESCARGAR_CV <Download className="w-4 h-4" />
+            {t.hero.downloadBtn} <Download className="w-4 h-4" />
           </a>
         </motion.div>
 

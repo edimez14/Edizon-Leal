@@ -1,7 +1,10 @@
 "use client";
 import { Terminal } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-white/10 py-12 bg-black">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -10,9 +13,7 @@ export default function Footer() {
             <Terminal className="w-5 h-5 text-emerald-500" />
             EDIZON.LEAL
           </div>
-          <p className="text-gray-500 text-sm">
-            Simulación de sistemas que escalan hacia el futuro.
-          </p>
+          <p className="text-gray-500 text-sm">{t.footer.tagline}</p>
         </div>
         <div className="flex gap-8 font-mono text-sm font-bold text-gray-400">
           <a href="https://github.com/edimez14" className="hover:text-white transition-colors">

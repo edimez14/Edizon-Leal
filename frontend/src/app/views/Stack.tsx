@@ -11,36 +11,29 @@ import {
   Cpu,
   Crosshair,
 } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
-// 1. Datos estáticos extraídos del componente para evitar re-creación en cada renderizado
-const CORE_STACK = [
+// Configuración estática (íconos y estilos no cambian con el idioma)
+const CORE_ICONS = [
   {
-    title: "Python (Django/DRF) & Rust (Axum)",
-    desc: "Construcción de APIs REST y servicios backend.",
     icon: Terminal,
     iconColor: "text-emerald-500",
     neonStyle:
       "border-emerald-500/50 shadow-[0_0_20px_rgba(16,185,129,0.15)] bg-emerald-500/[0.02]",
   },
   {
-    title: "PostgreSQL & MongoDB",
-    desc: "Modelado de datos relacionales y bases NoSQL.",
     icon: Database,
     iconColor: "text-blue-500",
     neonStyle:
       "border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.15)] bg-blue-500/[0.02]",
   },
   {
-    title: "Docker",
-    desc: "Contenedorización para entornos consistentes.",
     icon: Box,
     iconColor: "text-cyan-500",
     neonStyle:
       "border-cyan-500/50 shadow-[0_0_20px_rgba(6,182,212,0.15)] bg-cyan-500/[0.02]",
   },
   {
-    title: "Git & Fly.io",
-    desc: "Control de versiones y despliegue de proyectos.",
     icon: Globe,
     iconColor: "text-purple-500",
     neonStyle:
@@ -48,34 +41,26 @@ const CORE_STACK = [
   },
 ];
 
-const GAME_STACK = [
+const GAME_ICONS = [
   {
-    title: "Godot Engine & GDScript",
-    desc: "Desarrollo de prototipos y lógicas interactivas.",
     icon: Cpu,
     iconColor: "text-emerald-500",
     neonStyle:
       "border-emerald-500/50 shadow-[0_0_20px_rgba(16,185,129,0.15)] bg-emerald-500/[0.02]",
   },
   {
-    title: "Integración de Backend",
-    desc: "Conexión de clientes de juego con APIs externas.",
     icon: Server,
     iconColor: "text-blue-500",
     neonStyle:
       "border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.15)] bg-blue-500/[0.02]",
   },
   {
-    title: "Sistemas de Físicas",
-    desc: "Manejo de colisiones y cinemática en el motor.",
     icon: Activity,
     iconColor: "text-yellow-500",
     neonStyle:
       "border-yellow-500/50 shadow-[0_0_20px_rgba(234,179,8,0.15)] bg-yellow-500/[0.02]",
   },
   {
-    title: "Gestión de Escenas",
-    desc: "Arquitectura basada en nodos y optimización.",
     icon: Box,
     iconColor: "text-cyan-500",
     neonStyle:
@@ -84,6 +69,8 @@ const GAME_STACK = [
 ];
 
 export default function Stack() {
+  const { t } = useLanguage();
+
   return (
     <>
       <div className="w-full">
@@ -94,7 +81,7 @@ export default function Stack() {
         </h2>
 
         <div className="space-y-4">
-          {CORE_STACK.map((tech, i) => (
+          {CORE_ICONS.map((tech, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -20 }}
@@ -115,10 +102,10 @@ export default function Stack() {
 
               <div className="relative z-10 min-w-0">
                 <h4 className="font-bold text-white text-sm truncate md:whitespace-normal">
-                  {tech.title}
+                  {t.stack.core[i].title}
                 </h4>
                 <p className="text-xs text-gray-500 leading-relaxed mt-0.5">
-                  {tech.desc}
+                  {t.stack.core[i].desc}
                 </p>
               </div>
             </motion.div>
@@ -133,7 +120,7 @@ export default function Stack() {
         </h2>
 
         <div className="space-y-4">
-          {GAME_STACK.map((tech, i) => (
+          {GAME_ICONS.map((tech, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: 20 }}
@@ -153,10 +140,10 @@ export default function Stack() {
 
               <div className="relative z-10 min-w-0">
                 <h4 className="font-bold text-white text-sm truncate md:whitespace-normal">
-                  {tech.title}
+                  {t.stack.game[i].title}
                 </h4>
                 <p className="text-xs text-gray-500 leading-relaxed mt-0.5">
-                  {tech.desc}
+                  {t.stack.game[i].desc}
                 </p>
               </div>
             </motion.div>

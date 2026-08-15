@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useLanguage();
 
   // Retrasar la aparición del botón para no afectar el LCP (Largest Contentful Paint)
   useEffect(() => {
@@ -13,8 +15,7 @@ export default function WhatsAppButton() {
   }, []);
 
   const phoneNumber = "573011959402";
-  const message =
-    "Hola Edizon, vi tu portafolio y me gustaría hablar contigo sobre una oportunidad.";
+  const message = t.whatsapp.message;
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   if (!isVisible) return null;

@@ -5,6 +5,7 @@ import Footer from "./views/Footer";
 import Header from "./views/Header";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Background from "./views/Background";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -101,11 +102,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Background />
-        <Header />
-        {children}
-        <Footer />
-        <WhatsAppButton />
+        <LanguageProvider>
+          <Background />
+          <Header />
+          {children}
+          <Footer />
+          <WhatsAppButton />
+        </LanguageProvider>
       </body>
     </html>
   );

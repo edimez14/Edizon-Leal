@@ -2,13 +2,39 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Terminal, Menu, X } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import type { Lang } from "@/i18n/translations";
 
 const NAV_LINKS = [
   { name: "CORE", href: "#core" },
   { name: "STACK", href: "#stack" },
+  { name: "EXPERIENCE", href: "#experience" },
   { name: "PROTOTYPES", href: "#prototypes" },
   { name: "CERTIFICATES", href: "#certificates" },
 ];
+
+function LangToggle() {
+  const { lang, setLang } = useLanguage();
+
+  return (
+    <div className="flex items-center gap-1 border border-white/10 rounded-sm p-0.5 font-mono">
+      {(["es", "en"] as Lang[]).map((l) => (
+        <button
+          key={l}
+          onClick={() => setLang(l)}
+          aria-label={`Cambiar idioma a ${l.toUpperCase()}`}
+          className={`px-2 py-0.5 text-[10px] md:text-xs transition-colors ${
+            lang === l
+              ? "bg-emerald-500 text-black font-bold"
+              : "text-gray-400 hover:text-white"
+          }`}
+        >
+          {l.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  );
+}
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,17 +81,21 @@ export default function Header() {
             <span className="hidden lg:inline">
               REGION: <span className="text-white font-bold">US-EAST-1</span>
             </span>
+            <LangToggle />
           </div>
         </div>
 
         {/* Toggle Menú Mobile */}
-        <button
-          className="md:hidden z-50 text-gray-400 hover:text-white transition-colors"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        <div className="flex items-center gap-3 md:hidden z-50">
+          <LangToggle />
+          <button
+            className="text-gray-400 hover:text-white transition-colors"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Navegación y estado (Mobile) */}
