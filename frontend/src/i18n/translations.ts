@@ -154,14 +154,13 @@ export const translations: Record<Lang, Translation> = {
     experience: {
       title: "EXPERIENCIA LABORAL",
       subtitle:
-        "Prácticas profesionales en una empresa global de experiencia al cliente, aplicando desarrollo fullstack sobre aplicaciones y software en producción.",
-      badge: "PRACTICANTE_DEV",
-      cornerTag: "PRÁCTICAS_6M",
+        "Experiencia laboral en una empresa global de experiencia al cliente, aplicando desarrollo fullstack sobre aplicaciones y software en producción.",
+      badge: "DESARROLLADOR_WEB",
+      cornerTag: "EXPERIENCIA_6M",
       roleTitle: "Desarrollador de Aplicaciones Web",
-      company:
-        "INTOUCHCX // PRÁCTICAS PROFESIONALES · ÁREA ADMINISTRATIVA",
+      company: "INTOUCHCX // ÁREA ADMINISTRATIVA",
       intro:
-        "Seis meses de prácticas en una empresa global de experiencia al cliente, trabajando de punta a punta: desde la corrección de errores en producción hasta el diseño y estructuración de nuevos proyectos.",
+        "Seis meses trabajando de punta a punta en una empresa global de experiencia al cliente: desde la corrección de errores en producción hasta el diseño y estructuración de nuevos proyectos.",
       achievements: [
         "Reformé y optimicé código existente, resolviendo errores a nivel de backend y frontend en múltiples aplicaciones y software de la empresa.",
         "Desarrollé aplicaciones web completas (backend + frontend) para optimizar procesos internos.",
@@ -309,13 +308,13 @@ export const translations: Record<Lang, Translation> = {
     experience: {
       title: "WORK EXPERIENCE",
       subtitle:
-        "Professional internship at a global customer experience company, applying full-stack development to applications and production software.",
-      badge: "INTERN_DEV",
-      cornerTag: "INTERNSHIP_6M",
+        "Professional experience at a global customer experience company, applying full-stack development to applications and production software.",
+      badge: "WEB_DEVELOPER",
+      cornerTag: "EXPERIENCE_6M",
       roleTitle: "Web Applications Developer",
-      company: "INTOUCHCX // PROFESSIONAL INTERNSHIP · ADMINISTRATIVE AREA",
+      company: "INTOUCHCX // ADMINISTRATIVE AREA",
       intro:
-        "Six months of internship at a global customer experience company, working end to end: from fixing errors in production to designing and structuring new projects.",
+        "Six months working end to end at a global customer experience company: from fixing errors in production to designing and structuring new projects.",
       achievements: [
         "Refactored and optimized existing code, fixing backend and frontend errors across multiple applications and company software.",
         "Developed complete web applications (backend + frontend) to streamline internal processes.",
