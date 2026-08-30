@@ -124,6 +124,14 @@ export default function RootLayout({
             gtag('config', 'G-M66BEPXH44');
           `}
         </Script>
+        {/* Cookiebot para gestión de consentimiento de cookies */}
+        <Script
+          id="cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="78439568-eba6-4f0f-be33-1a91e186c12a"
+          type="text/javascript"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
